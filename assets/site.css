@@ -181,6 +181,7 @@ footer small{flex-basis:100%;font-size:14px;border-top:1px solid var(--line);pad
 .doc h2{font-size:23px;margin:36px 0 10px;scroll-margin-top:90px;display:flex;align-items:center;gap:10px}
 .doc h2::before{content:"";width:8px;height:22px;border-radius:4px;background:var(--grad)}
 .doc .toc{padding-left:0;margin:0 0 30px}
+.doc .toc li{margin:0}
 .doc p,.doc li{color:var(--ink)}
 .doc p+p{margin-top:10px}
 .doc ul{padding-left:22px;margin:8px 0}
@@ -227,6 +228,9 @@ footer small{flex-basis:100%;font-size:14px;border-top:1px solid var(--line);pad
   .phero .wrap{flex-direction:column;align-items:flex-start;gap:16px}
   .phero img.app{width:68px;height:68px;border-radius:20px}
   .doc article{padding:30px 22px;border-radius:26px}
+  .doc .toc{flex-wrap:nowrap;overflow-x:auto;margin:0 -22px 26px;padding:0 22px 20px;scrollbar-width:none}
+  .doc .toc::-webkit-scrollbar{display:none}
+  .toc a{white-space:nowrap}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
