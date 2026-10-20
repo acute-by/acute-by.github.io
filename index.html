@@ -4,36 +4,197 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Acute By Games</title>
-<meta name="description" content="Acute By makes small, cozy, lightweight puzzle games for everyone.">
+<meta name="description" content="Acute By is an indie studio making cozy, lightweight games and apps: Jarlings: Sort Puzzle and Mahjong Sunroom: Big Tiles.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#7C5CFF">
-<style>
-  :root{--bg:#FFF6EC;--ink:#2B1B3D;--muted:#6B5A7B;--card:#fff;--accent:#E23E6E}
-  @media (prefers-color-scheme:dark){:root{--bg:#1E1428;--ink:#F3EAF7;--muted:#BBA9C9;--card:#2A1E36;--accent:#FF7FA4}}
-  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-  main{max-width:720px;margin:0 auto;padding:40px 16px}
-  .hero{display:flex;align-items:center;gap:18px;margin-bottom:8px}
-  .hero img{width:88px;height:88px;flex:none;filter:drop-shadow(0 8px 16px rgba(124,92,255,.28))}
-  h1{font-size:38px;line-height:1.1;margin:0;font-weight:900;letter-spacing:-.5px}
-  h1 span{background:linear-gradient(90deg,#FF5F95,#7C5CFF);-webkit-background-clip:text;background-clip:text;color:transparent}
-  p{color:var(--muted)}
-  .card{background:var(--card);border-radius:20px;padding:18px 20px;margin:16px 0;box-shadow:0 6px 18px rgba(124,60,90,.12)}
-  a{color:var(--accent);font-weight:600}
-</style>
+<meta name="theme-color" content="#170C2B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Acute By">
+<meta property="og:title" content="Acute By Games">
+<meta property="og:description" content="Cozy, lightweight games and apps for everyone.">
+<meta property="og:url" content="https://acute-by.github.io/">
+<meta property="og:image" content="https://acute-by.github.io/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script>document.documentElement.className+=' js'</script>
+<script src="/assets/site.js" defer></script>
 </head>
-<body><main>
-<div class="hero">
-  <img src="/assets/logo.svg" alt="Acute By logo" width="88" height="88">
-  <div><h1>Acute <span>By</span></h1><p style="margin:4px 0 0">Games &amp; Apps</p></div>
-</div>
-<p>Small, cozy, lightweight puzzle games for everyone.</p>
-<div class="card"><b>Jarlings: Sort Puzzle</b><br>Sort squishy jelly Jarlings into jars. Every full jar sings!<br>
-<a href="jarlings/privacy.html">Privacy policy</a></div>
-<div class="card"><b>Mahjong Sunroom: Big Tiles</b><br>Relaxing mahjong solitaire with big, easy-to-read tiles. Grow a sunny garden!<br>
-<a href="mahjong-sunroom/privacy.html">Privacy policy</a></div>
-<p>Contact: <a href="mailto:support@acuteby.com">support@acuteby.com</a></p>
-</main></body>
+<body>
+<a class="skip" href="#games">Skip to games</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="38" height="38"><b>Acute <span>By</span></b></a>
+    <ul>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#promise">Our promise</a></li>
+      <li><a class="cta" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  <div class="wrap">
+    <div>
+      <span class="pill"><i>NEW</i> Indie studio for games &amp; apps</span>
+      <h1 id="hero-title">Tiny apps.<br>Big <span class="grad">smiles.</span></h1>
+      <p class="lede">Acute By crafts cozy, lightweight games and apps that respect your time, your battery and your privacy. Easy to start, hard to put down.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#games">Explore our games
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+        <a class="btn btn-ghost" href="#contact">Say hello</a>
+      </div>
+      <ul class="trust">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>No sign-up</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Play offline</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>About 3 MB downloads</li>
+      </ul>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="orbit o2"></div>
+      <div class="orbit">
+        <span class="sat s1"><img src="/assets/games/jarlings-icon.webp" alt="" width="96" height="96"></span>
+        <span class="sat s2"><img src="/assets/games/mahjong-icon.webp" alt="" width="96" height="96"></span>
+        <span class="sat s3">+</span>
+      </div>
+      <div class="tile"><img src="/assets/logo.svg" alt="" width="240" height="240"></div>
+      <i class="spark" style="left:8%;top:6%"></i>
+      <i class="spark" style="right:14%;bottom:12%;animation-delay:-1.1s;width:10px;height:10px"></i>
+      <i class="spark" style="left:2%;bottom:24%;animation-delay:-2.2s;width:9px;height:9px"></i>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 50C220 90 420 92 720 60S1220 8 1440 40V90H0Z"/></svg>
+</section>
+
+<section id="games" aria-labelledby="games-title">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Our games</span>
+      <h2 id="games-title">Cozy puzzles you'll <span class="grad">keep coming back to</span></h2>
+      <p>Quick to learn, satisfying to master, and perfect for a five-minute break or a long, calm evening.</p>
+    </div>
+
+    <article class="game jar reveal" aria-labelledby="jar-title">
+      <div class="info">
+        <div class="top">
+          <img class="icon" src="/assets/games/jarlings-icon.webp" alt="Jarlings app icon" width="84" height="84">
+          <div><h3 id="jar-title">Jarlings: Sort Puzzle</h3><div class="genre">Sort puzzle · 100 levels · 10 worlds</div></div>
+        </div>
+        <p class="desc">Sort squishy jelly Jarlings into jars and hear every full jar sing. Each level is a little tougher than the last, with a treasure chest waiting at every tenth.</p>
+        <ul class="feats">
+          <li>Each level tougher</li><li>Colour-blind friendly</li><li>Mystery Jarlings</li><li>Daily gifts</li>
+        </ul>
+        <div class="row">
+          <span class="status"><span class="dot"></span>Coming soon on Google Play</span>
+          <a class="link" href="/jarlings/privacy.html">Privacy policy &rarr;</a>
+        </div>
+      </div>
+      <div class="shots">
+        <img src="/assets/games/jarlings-2.webp" alt="Jarlings world map with ten themed worlds" width="360" height="640" loading="lazy">
+        <img src="/assets/games/jarlings-1.webp" alt="Jarlings gameplay: sorting jelly Jarlings into jars" width="360" height="640" loading="lazy">
+        <img src="/assets/games/jarlings-3.webp" alt="Jarlings treasure chest reward" width="360" height="640" loading="lazy">
+      </div>
+    </article>
+
+    <article class="game mah reveal" aria-labelledby="mah-title">
+      <div class="info">
+        <div class="top">
+          <img class="icon" src="/assets/games/mahjong-icon.webp" alt="Mahjong Sunroom app icon" width="84" height="84">
+          <div><h3 id="mah-title">Mahjong Sunroom: Big Tiles</h3><div class="genre">Mahjong solitaire · 30 layouts</div></div>
+        </div>
+        <p class="desc">Relaxing mahjong solitaire with big, easy-to-read tiles and corner numbers. Every solved board grows a new plant in your sunny garden.</p>
+        <ul class="feats">
+          <li>Extra-large tiles</li><li>Every deal solvable</li><li>Gentle hints</li><li>Grow a garden</li>
+        </ul>
+        <div class="row">
+          <span class="status"><span class="dot"></span>Coming soon on Google Play</span>
+          <a class="link" href="/mahjong-sunroom/privacy.html">Privacy policy &rarr;</a>
+        </div>
+      </div>
+      <div class="shots">
+        <img src="/assets/games/mahjong-2.webp" alt="Mahjong Sunroom garden" width="360" height="640" loading="lazy">
+        <img src="/assets/games/mahjong-1.webp" alt="Mahjong Sunroom board with big, clear tiles" width="360" height="640" loading="lazy">
+        <img src="/assets/games/mahjong-3.webp" alt="Mahjong Sunroom level complete" width="360" height="640" loading="lazy">
+      </div>
+    </article>
+
+    <div class="soon reveal">
+      <div class="bubbles" aria-hidden="true"><span>&#x2726;</span><span>?</span><span>+</span></div>
+      <div>
+        <h3>More games &amp; apps in the workshop</h3>
+        <p>New ideas are always brewing. Want to hear about them first?</p>
+      </div>
+      <a class="btn btn-primary" href="#contact">Keep me posted</a>
+    </div>
+  </div>
+</section>
+
+<section class="values" id="promise" aria-labelledby="promise-title">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Our promise</span>
+      <h2 id="promise-title">Small on your phone. <span class="grad">Big on care.</span></h2>
+      <p>Everything we make follows the same four rules.</p>
+    </div>
+    <div class="grid4">
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 3.8a6 6 0 0 0-8.5 0L5 10.5V19h8.5l6.7-6.7a6 6 0 0 0 0-8.5zM16 8 2 22M17.5 15H9"/></svg></div>
+        <h3>Light as a feather</h3>
+        <p>Tiny downloads, quick starts and smooth play, even on older phones.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Private by default</h3>
+        <p>No accounts and no sign-ups. Your progress stays on your device.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+        <h3>Fair &amp; friendly</h3>
+        <p>Rewarded ads are always your choice, and one purchase removes ads for good.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M4 9l8 2 8-2M12 11v5l-3 6M12 16l3 6"/></svg></div>
+        <h3>Made for everyone</h3>
+        <p>Big, clear visuals, colour-blind friendly cues and relaxed pacing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="contact reveal">
+      <img class="mark" src="/assets/logo.svg" alt="" width="340" height="340">
+      <img class="mark l" src="/assets/logo.svg" alt="" width="240" height="240">
+      <h2 id="contact-title">Say hello!</h2>
+      <p>Questions, ideas, bug reports or just a kind word. We read every message.</p>
+      <div class="mail">
+        <code>support@fileicu.com</code>
+        <button class="btn copy" type="button" data-copy="support@fileicu.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copy</span></button>
+        <a class="btn btn-white" href="mailto:support@fileicu.com">Send email</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="34" height="34"><b>Acute <span>By</span></b></a>
+    <nav aria-label="Footer">
+      <a href="/jarlings/privacy.html">Jarlings privacy</a>
+      <a href="/mahjong-sunroom/privacy.html">Mahjong Sunroom privacy</a>
+      <a href="mailto:support@fileicu.com">Contact</a>
+    </nav>
+    <small>&copy; <span id="year">2026</span> Acute By. Made with care. Google Play is a trademark of Google LLC.</small>
+  </div>
+</footer>
+</body>
 </html>
