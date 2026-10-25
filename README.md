@@ -1,14 +1,22 @@
 # Acute By — public web pages (GitHub Pages)
 
-Host this `docs/` folder as your developer website (free):
+This folder is the `acute-by/acute-by.github.io` repository, published at `https://acute-by.github.io/`
+(**Settings → Pages → Deploy from branch `main` / root**). Push to `main` and the site updates within a few minutes.
 
-1. GitHub user **`acute-by`** → the repository must be named exactly **`acute-by.github.io`** (a user site only works with `<username>.github.io`). Enable **Settings → Pages → Deploy from branch `main` / root**.
-2. Copy the contents of this folder into the repository root and push. The site is live at `https://acute-by.github.io/` within a few minutes.
-3. URLs to use in Play Console / AppGallery Connect / AdMob:
-   - Website: `https://acute-by.github.io/`
-   - Jarlings privacy policy (Google Play): `https://acute-by.github.io/jarlings/privacy.html`
-   - Jarlings privacy policy (HUAWEI AppGallery, no ads or purchases): `https://acute-by.github.io/jarlings/privacy-huawei.html`
-   - app-ads.txt: `https://acute-by.github.io/app-ads.txt` (**must be at the root of the developer website** listed on the Play listing)
-4. After you create the AdMob account, replace `pub-0000000000000000` in `app-ads.txt` with your publisher ID (AdMob → Apps → View all apps → app-ads.txt → "How to set up").
+## URLs for the store consoles
 
-Upload the folders `jarlings/`, `mahjong-sunroom/` and `paint-parade/` too: they hold the privacy policies.
+| What | HUAWEI AppGallery Connect | Google Play Console / AdMob |
+|---|---|---|
+| Website / developer site | `https://acute-by.github.io/` | `https://acute-by.github.io/` |
+| Jarlings privacy policy | `https://acute-by.github.io/jarlings/privacy-huawei.html` | `https://acute-by.github.io/jarlings/privacy.html` |
+| Mahjong Sunroom privacy policy | `https://acute-by.github.io/mahjong-sunroom/privacy-huawei.html` | `https://acute-by.github.io/mahjong-sunroom/privacy.html` |
+| Paint Parade privacy policy | `https://acute-by.github.io/paint-parade/privacy-huawei.html` | `https://acute-by.github.io/paint-parade/privacy.html` |
+| Terms of use (all games) | `https://acute-by.github.io/terms.html` | `https://acute-by.github.io/terms.html` |
+| All privacy policies | `https://acute-by.github.io/privacy.html` | same |
+| app-ads.txt | not used (AppGallery builds have no ads) | `https://acute-by.github.io/app-ads.txt` |
+
+The AppGallery builds are offline, with no ads and no purchases, so their policies are different from the Play ones.
+Each game's in-app **Settings → Privacy policy** opens the `privacy-huawei.html` page.
+
+The in-game share text links to `https://acute-by.github.io/#jarlings`, `#mahjong-sunroom` and `#paint-parade`.
+When a game goes live, replace its "Coming soon" status line in `index.html` with a link to its store page.
