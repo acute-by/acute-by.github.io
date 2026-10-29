@@ -52,6 +52,23 @@
     stage.addEventListener('pointerleave', function () { tile.style.transform = ''; });
   }
 
+  // Back to top: appears once the visitor has scrolled a screen or so.
+  var top = document.createElement('button');
+  top.type = 'button';
+  top.className = 'to-top';
+  top.setAttribute('aria-label', 'Back to top');
+  top.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+  document.body.appendChild(top);
+  function onScrollTop() { top.classList.toggle('show', window.scrollY > 600); }
+  onScrollTop();
+  window.addEventListener('scroll', onScrollTop, { passive: true });
+  top.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: still ? 'auto' : 'smooth' });
+    // Keyboard users continue from the top of the page.
+    var home = document.querySelector('.nav .brand');
+    if (home) home.focus({ preventScroll: true });
+  });
+
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 })();
