@@ -3,6 +3,12 @@
 This folder is the `acute-by/acute-by.github.io` repository, published at `https://acute-by.github.io/`
 (**Settings → Pages → Deploy from branch `main` / root**). Push to `main` and the site updates within a few minutes.
 
+## What the site shows
+
+Two parts: **Games** (`#games`, with `#promise`) and **Websites** (`#websites`): File ICU (https://www.fileicu.com/)
+and Health ICU (https://www.health-icu.com/). Every page has a Websites link in the nav and links both websites in the footer; both websites
+link back here in their footers. Update the tool counts in `index.html` when tools are added.
+
 ## URLs for the store consoles
 
 | What | HUAWEI AppGallery Connect | Google Play Console / AdMob |
