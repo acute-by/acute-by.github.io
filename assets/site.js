@@ -1,12 +1,84 @@
-// Acute By — small progressive enhancements. The site works fully without this file.
+// Acute By — progressive enhancements, UI interactions & multilingual URL routing.
 (function () {
   var root = document.documentElement;
   var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  root.classList.add('ready'); // switches off the CSS safety net that reveals content when JS is missing
+  root.classList.add('ready');
 
-  // Solid nav once the page scrolls.
+  // ---------- Language URL Subpath Routing ----------
+  var currentPath = window.location.pathname;
+  var pathLangMatch = currentPath.match(/^\/(fr|es|de|ar|ur)(\/|$)/);
+  var currentUrlLang = pathLangMatch ? pathLangMatch[1] : 'en';
+
+  root.lang = currentUrlLang;
+  root.dir = (currentUrlLang === 'ar' || currentUrlLang === 'ur') ? 'rtl' : 'ltr';
+
+  // Ensure all brand logos point to the correct language home
+  document.querySelectorAll('.nav .brand, footer .brand').forEach(function (brand) {
+    if (currentUrlLang === 'en') {
+      brand.setAttribute('href', '/');
+    } else {
+      brand.setAttribute('href', '/' + currentUrlLang + '/');
+    }
+  });
+
+  function navigateToLanguage(targetLang) {
+    if (targetLang === currentUrlLang) return;
+
+    // Strip existing language subpath if present
+    var cleanPath = currentPath.replace(/^\/(fr|es|de|ar|ur)(\/|$)/, '/');
+    if (!cleanPath || cleanPath === '/') cleanPath = '/index.html';
+
+    var targetUrl = '/';
+    if (targetLang !== 'en') {
+      targetUrl = '/' + targetLang + (cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath);
+    } else {
+      targetUrl = cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath;
+    }
+
+    localStorage.setItem('acute_lang', targetLang);
+    window.location.href = targetUrl;
+  }
+
+  // Inject Language Selector Dropdown into Nav
+  var navUl = document.querySelector('.nav .wrap ul');
+  if (navUl && !document.querySelector('.lang-picker')) {
+    var li = document.createElement('li');
+    li.className = 'lang-picker';
+    li.innerHTML = '<select class="lang-select" aria-label="Select language">' +
+      '<option value="en">🇬🇧 EN</option>' +
+      '<option value="fr">🇫🇷 FR</option>' +
+      '<option value="es">🇪🇸 ES</option>' +
+      '<option value="de">🇩🇪 DE</option>' +
+      '<option value="ar">🇸🇦 العربية</option>' +
+      '<option value="ur">🇵🇰 اردو</option>' +
+      '</select>';
+    navUl.appendChild(li);
+
+    var select = li.querySelector('.lang-select');
+    select.value = currentUrlLang;
+    select.addEventListener('change', function () {
+      navigateToLanguage(this.value);
+    });
+  }
+
+  // Solid nav & active link highlight on scroll.
   var nav = document.querySelector('.nav');
-  function onScroll() { if (nav) nav.classList.toggle('scrolled', window.scrollY > 24); }
+  var navLinks = document.querySelectorAll('.nav ul a[href^="#"]');
+  var sections = document.querySelectorAll('section[id], article[id]');
+
+  function onScroll() {
+    if (nav) nav.classList.toggle('scrolled', window.scrollY > 24);
+
+    var scrollPos = window.scrollY + 120;
+    sections.forEach(function (sec) {
+      if (scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
+        var id = sec.getAttribute('id');
+        navLinks.forEach(function (link) {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
@@ -23,7 +95,7 @@
     items.forEach(function (el) { el.classList.add('in'); });
   }
 
-  // Copy the support address.
+  // Copy support email address.
   document.querySelectorAll('[data-copy]').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var text = btn.getAttribute('data-copy');
@@ -31,7 +103,11 @@
       function done() {
         if (!label) return;
         var old = label.textContent;
-        label.textContent = 'Copied!';
+        label.textContent = (currentUrlLang === 'fr') ? 'Copié !' :
+          (currentUrlLang === 'es') ? '¡Copiado!' :
+          (currentUrlLang === 'de') ? 'Kopiert!' :
+          (currentUrlLang === 'ar') ? 'تم النسخ!' :
+          (currentUrlLang === 'ur') ? 'کاپی ہو گیا!' : 'Copied!';
         setTimeout(function () { label.textContent = old; }, 1600);
       }
       if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function () {});
@@ -52,6 +128,39 @@
     stage.addEventListener('pointerleave', function () { tile.style.transform = ''; });
   }
 
+  // Screenshot Lightbox Modal
+  var lightbox = document.createElement('div');
+  lightbox.className = 'lightbox';
+  lightbox.setAttribute('aria-hidden', 'true');
+  lightbox.innerHTML = '<button type="button" class="lightbox-close" aria-label="Close image preview">&times;</button><img src="" alt="Game screenshot preview">';
+  document.body.appendChild(lightbox);
+
+  var lbImg = lightbox.querySelector('img');
+  var lbClose = lightbox.querySelector('.lightbox-close');
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+  }
+
+  lbClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  window.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+  });
+
+  document.querySelectorAll('.shots img').forEach(function (img) {
+    img.title = 'Click to zoom screenshot';
+    img.addEventListener('click', function () {
+      lbImg.src = img.src;
+      lbImg.alt = img.alt || 'Game screenshot';
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+    });
+  });
+
   // Back to top: appears once the visitor has scrolled a screen or so.
   var top = document.createElement('button');
   top.type = 'button';
@@ -64,7 +173,6 @@
   window.addEventListener('scroll', onScrollTop, { passive: true });
   top.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: still ? 'auto' : 'smooth' });
-    // Keyboard users continue from the top of the page.
     var home = document.querySelector('.nav .brand');
     if (home) home.focus({ preventScroll: true });
   });
