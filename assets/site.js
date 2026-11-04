@@ -25,14 +25,16 @@
 
   // Pages that exist in every language. Game privacy policies are English only, so other languages open
   // the translated list of policies at that game; anything else goes to that language's home page.
-  var translatedPages = ['/', '/games.html', '/websites.html', '/about.html', '/privacy.html', '/terms.html'];
+  var translatedPages = ['/', '/games.html', '/websites.html', '/about.html', '/privacy.html', '/terms.html', '/jarlings/', '/mahjong-sunroom/', '/paint-parade/', '/one-touch-survivor/', '/chrono-detective/', '/file-icu-app/', '/health-icu-app/'];
 
   function navigateToLanguage(targetLang) {
     if (targetLang === currentUrlLang) return;
 
     var cleanPath = currentPath.replace(/^\/(fr|es|de|ar|ur)(\/|$)/, '/');
     if (cleanPath === '/index.html') cleanPath = '/';
-    if (cleanPath !== '/' && !/\.html$/.test(cleanPath)) cleanPath = cleanPath.replace(/\/$/, '') + '.html';
+    if (cleanPath === '/' || translatedPages.indexOf(cleanPath) !== -1) { /* already a page address */ }
+    else if (translatedPages.indexOf(cleanPath + '/') !== -1) cleanPath += '/';
+    else if (!/\.html$/.test(cleanPath)) cleanPath = cleanPath.replace(/\/$/, '') + '.html';
 
     var hash = window.location.hash;
     if (translatedPages.indexOf(cleanPath) === -1) {

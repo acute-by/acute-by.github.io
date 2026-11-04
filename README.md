@@ -17,6 +17,11 @@ both sites link back the same way. `fr.html` and its siblings forward `/fr` to `
 language and sends translated policy addresses to the English policy. Translated pages are built from the English
 pages, so don't edit them by hand: see `D:Tool Site DocsWebsiteAcute ByChangelog.md`.
 
+## Game and app pages
+
+Each game and app has its own page: `/jarlings/`, `/mahjong-sunroom/`, `/paint-parade/`, `/one-touch-survivor/`,
+`/chrono-detective/`, `/file-icu-app/` and `/health-icu-app/`, in six languages. They are generated too; see the docs folder.
+
 ## Analytics
 
 Google Analytics (G-H8K2FVD06Q) is in `assets/consent.js`, which also holds the privacy choice. It follows the same rules
