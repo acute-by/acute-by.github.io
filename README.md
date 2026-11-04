@@ -35,8 +35,9 @@ as File ICU and Health ICU, using the device's time zone because GitHub Pages ha
 | All privacy policies | `https://acute-by.github.io/privacy.html` | same |
 | app-ads.txt | not used (AppGallery builds have no ads) | `https://acute-by.github.io/app-ads.txt` |
 
-The AppGallery builds are offline, with no ads and no purchases, so their policies are different from the Play ones.
-Each game's in-app **Settings → Privacy policy** opens the `privacy-huawei.html` page.
+Games and apps ship on Android and iOS only. The three `privacy-huawei.html` pages stay online for any build that links to
+them, but they are `noindex`, out of the sitemap and not linked from the site. iOS privacy policies do not exist yet and
+are needed before App Store submission.
 
 The in-game share text links to `https://acute-by.github.io/#jarlings`, `#mahjong-sunroom` and `#paint-parade`.
 When a game goes live, replace its "Coming soon" status line in `index.html` with a link to its store page.
