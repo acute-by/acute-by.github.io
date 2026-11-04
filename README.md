@@ -17,6 +17,12 @@ both sites link back the same way. `fr.html` and its siblings forward `/fr` to `
 language and sends translated policy addresses to the English policy. Translated pages are built from the English
 pages, so don't edit them by hand: see `D:Tool Site DocsWebsiteAcute ByChangelog.md`.
 
+## Analytics
+
+Google Analytics (G-H8K2FVD06Q) is in `assets/consent.js`, which also holds the privacy choice. It follows the same rules
+as File ICU and Health ICU, using the device's time zone because GitHub Pages has no server, and only runs on
+`acute-by.github.io`. Game privacy policies must not load this file: the games promise no analytics.
+
 ## URLs for the store consoles
 
 | What | HUAWEI AppGallery Connect | Google Play Console / AdMob |

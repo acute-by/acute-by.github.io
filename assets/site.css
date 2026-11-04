@@ -330,6 +330,7 @@ footer small{flex-basis:100%;font-size:14px;border-top:1px solid var(--line);pad
 
 /* ---------- Privacy choice ---------- */
 .consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;max-width:460px;padding:20px 22px;border-radius:var(--r-md);background:var(--night);color:#fff;box-shadow:0 18px 50px rgba(18,10,32,.45);font-size:15px;line-height:1.5}
+@media (min-width:700px){.consent{left:auto;width:460px}html[dir="rtl"] .consent{left:16px;right:auto}}
 .consent p{margin:0 0 14px;color:#EDE6F5}
 .consent .consent-title{margin:0 34px 6px 0;font-size:18px;font-weight:900;color:#fff}
 .consent a{color:var(--gold);font-weight:800}
