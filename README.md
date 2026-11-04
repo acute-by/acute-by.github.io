@@ -7,7 +7,15 @@ This folder is the `acute-by/acute-by.github.io` repository, published at `https
 
 Two parts: **Games** (`#games`, with `#promise`) and **Websites** (`#websites`): File ICU (https://www.fileicu.com/)
 and Health ICU (https://www.health-icu.com/). Every page has a Websites link in the nav and links both websites in the footer; both websites
-link back here in their footers. Update the tool counts in `index.html` when tools are added.
+link back here in their footers. Update the tool counts in `index.html` and `websites.html`, and in all six language tables, when tools are added.
+
+## Languages
+
+English is at the root; French, Spanish, German, Arabic and Urdu are in `/fr/`, `/es/`, `/de/`, `/ar/` and `/ur/`, with the
+same six pages. Game privacy policies are English only. Links to File ICU and Health ICU use the same language, and
+both sites link back the same way. `fr.html` and its siblings forward `/fr` to `/fr/`. `404.html` shows the visitor's
+language and sends translated policy addresses to the English policy. Translated pages are built from the English
+pages, so don't edit them by hand: see `D:Tool Site DocsWebsiteAcute ByChangelog.md`.
 
 ## URLs for the store consoles
 

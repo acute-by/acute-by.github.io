@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found | Acute By</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#170C2B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script>
+// Game privacy policies exist in English only, so a translated address goes to the real page.
+(function () {
+  var match = location.pathname.match(/^\/(?:fr|es|de|ar|ur)\/((?:jarlings|mahjong-sunroom|paint-parade|one-touch-survivor|chrono-detective)\/.+)$/);
+  if (match) location.replace('/' + match[1] + location.hash);
+})();
+</script>
+<script src="/assets/site.js" defer></script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Acute By"><img src="/assets/logo.svg" alt="" width="38" height="38"><b>Acute <span>By</span></b></a>
+    <ul></ul>
+  </div>
+</header>
+<main>
+<div class="phero">
+  <span class="blob b1"></span><span class="blob b2"></span>
+  <div class="wrap">
+    <img class="app" src="/assets/logo.svg" alt="" width="88" height="88">
+    <div>
+      <h1 id="nf-title">Page not found</h1>
+      <div class="meta" id="nf-text">This page does not exist or has moved.</div>
+    </div>
+  </div>
+</div>
+<div class="doc"><a class="back" id="nf-home" href="/">&larr; Back to Acute By</a></div>
+</main>
+<script>
+(function () {
+  var strings = {"en":{"t":"Page not found","x":"This page does not exist or has moved.","h":"Back to Acute By"},"fr":{"t":"Page introuvable","x":"Cette page n'existe pas ou a été déplacée.","h":"Retour à Acute By"},"es":{"t":"Página no encontrada","x":"Esta página no existe o se ha movido.","h":"Volver a Acute By"},"de":{"t":"Seite nicht gefunden","x":"Diese Seite existiert nicht oder wurde verschoben.","h":"Zurück zu Acute By"},"ar":{"t":"الصفحة غير موجودة","x":"هذه الصفحة غير موجودة أو نُقلت.","h":"العودة إلى Acute By"},"ur":{"t":"صفحہ نہیں ملا","x":"یہ صفحہ موجود نہیں یا منتقل ہو چکا ہے۔","h":"واپس Acute By پر"}};
+  var match = location.pathname.match(/^\/(fr|es|de|ar|ur)(\/|$)/);
+  var lang = match ? match[1] : 'en';
+  var text = strings[lang];
+  var rtl = lang === 'ar' || lang === 'ur';
+  document.title = text.t + ' | Acute By';
+  document.getElementById('nf-title').textContent = text.t;
+  document.getElementById('nf-text').textContent = text.x;
+  var home = document.getElementById('nf-home');
+  home.textContent = (rtl ? '\u2192 ' : '\u2190 ') + text.h;
+  home.href = lang === 'en' ? '/' : '/' + lang + '/';
+})();
+</script>
+</body>
+</html>

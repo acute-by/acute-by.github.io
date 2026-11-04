@@ -9,6 +9,8 @@
   var pathLangMatch = currentPath.match(/^\/(fr|es|de|ar|ur)(\/|$)/);
   var currentUrlLang = pathLangMatch ? pathLangMatch[1] : 'en';
 
+  var messages = {"en":{"select":"Select language","top":"Back to top","close":"Close image preview","zoom":"Click to zoom screenshot","shot":"Game screenshot","copied":"Copied!"},"fr":{"select":"Choisir la langue","top":"Retour en haut","close":"Fermer l'aperçu de l'image","zoom":"Cliquer pour agrandir la capture d'écran","shot":"Capture d'écran du jeu","copied":"Copié !"},"es":{"select":"Elegir idioma","top":"Volver arriba","close":"Cerrar la vista previa","zoom":"Haz clic para ampliar la captura","shot":"Captura del juego","copied":"¡Copiado!"},"de":{"select":"Sprache wählen","top":"Nach oben","close":"Bildvorschau schließen","zoom":"Zum Vergrößern klicken","shot":"Screenshot des Spiels","copied":"Kopiert!"},"ar":{"select":"اختر اللغة","top":"العودة إلى الأعلى","close":"إغلاق معاينة الصورة","zoom":"انقر لتكبير لقطة الشاشة","shot":"لقطة شاشة من اللعبة","copied":"تم النسخ!"},"ur":{"select":"زبان منتخب کریں","top":"اوپر جائیں","close":"تصویر کا پیش نظارہ بند کریں","zoom":"اسکرین شاٹ بڑا کرنے کے لیے کلک کریں","shot":"گیم کا اسکرین شاٹ","copied":"کاپی ہو گیا!"}}[currentUrlLang];
+
   root.lang = currentUrlLang;
   root.dir = (currentUrlLang === 'ar' || currentUrlLang === 'ur') ? 'rtl' : 'ltr';
 
@@ -21,22 +23,26 @@
     }
   });
 
+  // Pages that exist in every language. Game privacy policies are English only, so other languages open
+  // the translated list of policies at that game; anything else goes to that language's home page.
+  var translatedPages = ['/', '/games.html', '/websites.html', '/about.html', '/privacy.html', '/terms.html'];
+
   function navigateToLanguage(targetLang) {
     if (targetLang === currentUrlLang) return;
 
-    // Strip existing language subpath if present
     var cleanPath = currentPath.replace(/^\/(fr|es|de|ar|ur)(\/|$)/, '/');
-    if (!cleanPath || cleanPath === '/') cleanPath = '/index.html';
+    if (cleanPath === '/index.html') cleanPath = '/';
+    if (cleanPath !== '/' && !/\.html$/.test(cleanPath)) cleanPath = cleanPath.replace(/\/$/, '') + '.html';
 
-    var targetUrl = '/';
-    if (targetLang !== 'en') {
-      targetUrl = '/' + targetLang + (cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath);
-    } else {
-      targetUrl = cleanPath.startsWith('/') ? cleanPath : '/' + cleanPath;
+    var hash = window.location.hash;
+    if (translatedPages.indexOf(cleanPath) === -1) {
+      var game = cleanPath.match(/^\/([a-z-]+)\/privacy/);
+      cleanPath = game ? '/privacy.html' : '/';
+      hash = game ? '#' + game[1] : '';
     }
 
-    localStorage.setItem('acute_lang', targetLang);
-    window.location.href = targetUrl;
+    try { localStorage.setItem('acute_lang', targetLang); } catch (error) { /* the language still changes */ }
+    window.location.href = (targetLang === 'en' ? '' : '/' + targetLang) + cleanPath + hash;
   }
 
   // Inject Language Selector Dropdown into Nav
@@ -44,7 +50,7 @@
   if (navUl && !document.querySelector('.lang-picker')) {
     var li = document.createElement('li');
     li.className = 'lang-picker';
-    li.innerHTML = '<select class="lang-select" aria-label="Select language">' +
+    li.innerHTML = '<select class="lang-select" aria-label="' + messages.select + '">' +
       '<option value="en">🇬🇧 EN</option>' +
       '<option value="fr">🇫🇷 FR</option>' +
       '<option value="es">🇪🇸 ES</option>' +
@@ -103,11 +109,7 @@
       function done() {
         if (!label) return;
         var old = label.textContent;
-        label.textContent = (currentUrlLang === 'fr') ? 'Copié !' :
-          (currentUrlLang === 'es') ? '¡Copiado!' :
-          (currentUrlLang === 'de') ? 'Kopiert!' :
-          (currentUrlLang === 'ar') ? 'تم النسخ!' :
-          (currentUrlLang === 'ur') ? 'کاپی ہو گیا!' : 'Copied!';
+        label.textContent = messages.copied;
         setTimeout(function () { label.textContent = old; }, 1600);
       }
       if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function () {});
@@ -132,7 +134,7 @@
   var lightbox = document.createElement('div');
   lightbox.className = 'lightbox';
   lightbox.setAttribute('aria-hidden', 'true');
-  lightbox.innerHTML = '<button type="button" class="lightbox-close" aria-label="Close image preview">&times;</button><img src="" alt="Game screenshot preview">';
+  lightbox.innerHTML = '<button type="button" class="lightbox-close" aria-label="' + messages.close + '">&times;</button><img src="" alt="Game screenshot preview">';
   document.body.appendChild(lightbox);
 
   var lbImg = lightbox.querySelector('img');
@@ -152,10 +154,10 @@
   });
 
   document.querySelectorAll('.shots img').forEach(function (img) {
-    img.title = 'Click to zoom screenshot';
+    img.title = messages.zoom;
     img.addEventListener('click', function () {
       lbImg.src = img.src;
-      lbImg.alt = img.alt || 'Game screenshot';
+      lbImg.alt = img.alt || messages.shot;
       lightbox.classList.add('open');
       lightbox.setAttribute('aria-hidden', 'false');
     });
@@ -165,7 +167,7 @@
   var top = document.createElement('button');
   top.type = 'button';
   top.className = 'to-top';
-  top.setAttribute('aria-label', 'Back to top');
+  top.setAttribute('aria-label', messages.top);
   top.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
   document.body.appendChild(top);
   function onScrollTop() { top.classList.toggle('show', window.scrollY > 600); }
