@@ -18,7 +18,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#170C2B">
+<meta name="theme-color" content="#FFF1E6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Acute By">
 <meta property="og:title" content="Jarlings: Sort Puzzle, juego de clasificar colores">
@@ -50,9 +50,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Noto+Sans+Arabic:wght@400;600;800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
-<script>document.documentElement.className+=' js'</script>
+<script>(function(d){d.className+=' js';try{var t=localStorage.getItem('acute_theme');if(t)d.setAttribute('data-theme',t)}catch(e){}})(document.documentElement)</script>
 <script src="/assets/site.js" defer></script>
 <script src="/assets/consent.js" defer></script>
 </head>
@@ -61,104 +61,135 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="/es/" aria-label="Inicio de Acute By"><img src="/assets/logo.svg" alt="" width="38" height="38"><b>Acute <span>By</span></b></a>
+    <a class="brand" href="/es/" aria-label="Inicio de Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
     <ul>
       <li><a class="active" href="/es/games.html">Juegos</a></li>
       <li><a href="/es/websites.html">Sitios web</a></li>
       <li><a href="/es/about.html">Nosotros</a></li>
-      <li><a class="cta" href="/es/about.html#contact">Contacto</a></li>
+      <li><a class="cta" href="/es/contact.html">Contacto</a></li>
     </ul>
   </div>
 </header>
 
 <main>
-<div class="phero">
-  <span class="blob b1"></span><span class="blob b2"></span>
+<section class="product" id="overview">
   <div class="wrap">
-    <img class="app" src="/assets/games/jarlings-icon.webp" alt="Icono de la aplicación Jarlings" width="88" height="88">
-    <div>
-      <h1>Jarlings: Sort Puzzle</h1>
-      <div class="meta">Puzle acogedor de clasificar colores</div>
-    </div>
-  </div>
-</div>
-
-<section class="detail-top" id="overview">
-  <div class="wrap">
-    <article class="game jar">
-      <div class="info">
+    <a class="top-back" href="/es/games.html">&larr; Todos los juegos</a>
+    <div class="panel jar on">
+      <div class="copy">
+        <div class="pid"><img src="/assets/games/jarlings-icon.webp" alt="Icono de la aplicación Jarlings" width="56" height="56"><span class="genre">Puzle acogedor de clasificar colores</span></div>
+        <h1>Jarlings: Sort Puzzle</h1>
         <p class="desc">Cada Jarling quiere volver a casa. Toca un tarro para levantar los Jarlings de arriba y toca otro tarro para dejarlos dentro. Llena cada tarro con cuatro amigos iguales y escúchalo cantar.</p>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Próximamente en Android e iOS</span>
-          <a class="link" href="/es/privacy.html#jarlings">Política de privacidad &rarr;</a>
-        </div>
+        <div class="foot"><span class="status"><i></i>Próximamente en Android e iOS</span><a href="/es/privacy.html#jarlings">Política de privacidad &rarr;</a></div>
       </div>
       <div class="shots">
-        <img src="/assets/games/jarlings-2.webp" alt="Mapa de Jarlings con diez mundos temáticos" width="360" height="730" loading="lazy">
-        <img src="/assets/games/jarlings-1.webp" alt="Partida de Jarlings: clasificar Jarlings de gelatina en tarros" width="360" height="730" loading="lazy">
-        <img src="/assets/games/jarlings-3.webp" alt="Cofre del tesoro de Jarlings cada diez niveles" width="360" height="730" loading="lazy">
+        <div class="phone p2"><img src="/assets/games/jarlings-2.webp" alt="Mapa de Jarlings con diez mundos temáticos" width="360" height="730" loading="lazy"></div>
+        <div class="phone p3"><img src="/assets/games/jarlings-3.webp" alt="Cofre del tesoro de Jarlings cada diez niveles" width="360" height="730" loading="lazy"></div>
+        <div class="phone p1"><img src="/assets/games/jarlings-1.webp" alt="Partida de Jarlings: clasificar Jarlings de gelatina en tarros" width="360" height="730" loading="lazy"></div>
       </div>
-    </article>
-  </div>
-</section>
-
-<section class="values detail-section" aria-labelledby="how-title">
-  <div class="wrap">
-    <div class="head"><h2 id="how-title">Cómo se juega</h2></div>
-    <div class="grid4">
-      <div class="card"><div class="ic step">1</div><p>Toca un tarro para levantar los Jarlings de arriba.</p></div>
-      <div class="card"><div class="ic step">2</div><p>Toca otro tarro para dejarlos dentro. Los Jarlings solo se unen a amigos del mismo color.</p></div>
-      <div class="card"><div class="ic step">3</div><p>Llena un tarro con cuatro Jarlings iguales y sonará una nota.</p></div>
-      <div class="card"><div class="ic step">4</div><p>Termina el nivel para oír el acorde completo y ganar hasta tres estrellas.</p></div>
     </div>
   </div>
 </section>
 
-<section class="detail-section" aria-labelledby="features-title">
+<section class="sec" aria-labelledby="how-title">
   <div class="wrap">
-    <div class="head"><h2 id="features-title">Características</h2></div>
-    <div class="grid3">
-      <div class="card"><h3>100 niveles, 10 mundos</h3><p>Viaja de la Tienda de Dulces al Laboratorio Espacial. Cada nivel es un poco más difícil y todos tienen solución garantizada.</p></div>
-      <div class="card"><h3>Tesoros y regalos</h3><p>Abre un cofre del tesoro cada 10 niveles y un regalo gratis cada día.</p></div>
-      <div class="card"><h3>Tarro diario</h3><p>Un puzle nuevo cada día, con una racha que mantener.</p></div>
-      <div class="card"><h3>Ayuda cuando la necesitas</h3><p>Los potenciadores Deshacer, Pista y Tarro extra hacen que nunca te quedes atascado del todo.</p></div>
-      <div class="card"><h3>Sin presión</h3><p>Sin temporizadores. Juega a tu ritmo, sin conexión y en cualquier lugar.</p></div>
-      <div class="card"><h3>Apto para daltónicos</h3><p>Cada Jarling tiene su propio símbolo además de su color.</p></div>
+    <div class="sec-head solo reveal"><h2 id="how-title">Cómo se juega</h2></div>
+    <ol class="cards four">
+      <li class="card step reveal"><span class="step-n">1</span><p>Toca un tarro para levantar los Jarlings de arriba.</p></li>
+      <li class="card step reveal"><span class="step-n">2</span><p>Toca otro tarro para dejarlos dentro. Los Jarlings solo se unen a amigos del mismo color.</p></li>
+      <li class="card step reveal"><span class="step-n">3</span><p>Llena un tarro con cuatro Jarlings iguales y sonará una nota.</p></li>
+      <li class="card step reveal"><span class="step-n">4</span><p>Termina el nivel para oír el acorde completo y ganar hasta tres estrellas.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec alt" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="sec-head solo reveal"><h2 id="features-title">Características</h2></div>
+    <div class="cards">
+      <div class="card reveal"><h3>100 niveles, 10 mundos</h3><p>Viaja de la Tienda de Dulces al Laboratorio Espacial. Cada nivel es un poco más difícil y todos tienen solución garantizada.</p></div>
+      <div class="card reveal"><h3>Tesoros y regalos</h3><p>Abre un cofre del tesoro cada 10 niveles y un regalo gratis cada día.</p></div>
+      <div class="card reveal"><h3>Tarro diario</h3><p>Un puzle nuevo cada día, con una racha que mantener.</p></div>
+      <div class="card reveal"><h3>Ayuda cuando la necesitas</h3><p>Los potenciadores Deshacer, Pista y Tarro extra hacen que nunca te quedes atascado del todo.</p></div>
+      <div class="card reveal"><h3>Sin presión</h3><p>Sin temporizadores. Juega a tu ritmo, sin conexión y en cualquier lugar.</p></div>
+      <div class="card reveal"><h3>Apto para daltónicos</h3><p>Cada Jarling tiene su propio símbolo además de su color.</p></div>
     </div>
   </div>
 </section>
 
-<section class="detail-section detail-facts" aria-labelledby="facts-title">
-  <div class="wrap">
-    <div class="head"><h2 id="facts-title">De un vistazo</h2></div>
-    <dl class="facts">
-      <div><dt>Género</dt><dd>Puzle de clasificar colores</dd></div>
-      <div><dt>Contenido</dt><dd>100 niveles en 10 mundos</dd></div>
-      <div><dt>Plataformas</dt><dd>Android e iOS (próximamente)</dd></div>
-      <div><dt>Precio</dt><dd>Gratis, con anuncios y compras opcionales</dd></div>
-      <div><dt>Funciona sin conexión</dt><dd>Sí</dd></div>
-      <div><dt>Idioma</dt><dd>Inglés</dd></div>
-      <div><dt>Desarrollador</dt><dd>Acute By</dd></div>
-    </dl>
-    <div class="head detail-more"><h2>Más de Acute By</h2></div>
-    <ul class="feats more-list"><li><a href="/es/mahjong-sunroom/">Mahjong Sunroom: Big Tiles</a></li><li><a href="/es/paint-parade/">Paint Parade: Pixel Puzzle</a></li><li><a href="/es/one-touch-survivor/">One Touch Survivor</a></li><li><a href="/es/chrono-detective/">Chrono Detective</a></li><li><a href="/es/file-icu-app/">App File ICU</a></li><li><a href="/es/health-icu-app/">App Health ICU</a></li></ul>
-    <a class="back" href="/es/games.html">&larr; Todos los juegos</a>
+<section class="sec" aria-labelledby="facts-title">
+  <div class="wrap glance">
+    <div class="reveal">
+      <h2 id="facts-title">De un vistazo</h2>
+      <dl class="facts">
+        <div><dt>Género</dt><dd>Puzle de clasificar colores</dd></div>
+        <div><dt>Contenido</dt><dd>100 niveles en 10 mundos</dd></div>
+        <div><dt>Plataformas</dt><dd>Android e iOS (próximamente)</dd></div>
+        <div><dt>Precio</dt><dd>Gratis, con anuncios y compras opcionales</dd></div>
+        <div><dt>Funciona sin conexión</dt><dd>Sí</dd></div>
+        <div><dt>Idioma</dt><dd>Inglés</dd></div>
+        <div><dt>Desarrollador</dt><dd>Acute By</dd></div>
+      </dl>
+    </div>
+    <div class="reveal">
+      <h2>Más de Acute By</h2>
+      <ul class="more">
+      <li><a href="/es/mahjong-sunroom/"><img src="/assets/games/mahjong-icon.webp" alt="" width="46" height="46"><span><b>Mahjong Sunroom: Big Tiles</b><small>Mahjong solitario de fichas grandes</small></span></a></li>
+      <li><a href="/es/paint-parade/"><img src="/assets/games/paint-icon.webp" alt="" width="46" height="46"><span><b>Paint Parade: Pixel Puzzle</b><small>Puzle de pixel art en cinta transportadora</small></span></a></li>
+      <li><a href="/es/one-touch-survivor/"><img src="/assets/games/survivor-icon.webp" alt="" width="46" height="46"><span><b>One Touch Survivor</b><small>Supervivencia en arena con un dedo</small></span></a></li>
+      <li><a href="/es/chrono-detective/"><img src="/assets/games/chrono-icon.webp" alt="" width="46" height="46"><span><b>Chrono Detective</b><small>Puzle acogedor de viajes en el tiempo</small></span></a></li>
+      <li><a href="/es/file-icu-app/"><span class="logo"><img src="/assets/sites/file-icu.svg" alt="" width="32" height="32"></span><span><b>App File ICU</b><small>Herramientas de PDF, imagen y texto sin conexión</small></span></a></li>
+      <li><a href="/es/health-icu-app/"><span class="logo"><img src="/assets/sites/health-icu.svg" alt="" width="32" height="32"></span><span><b>App Health ICU</b><small>Calculadoras de salud sin conexión</small></span></a></li>
+      </ul>
+      <a class="back" href="/es/games.html">&larr; Todos los juegos</a>
+    </div>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="/es/" aria-label="Inicio de Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34"><b>Acute <span>By</span></b></a>
-    <nav aria-label="Pie de página">
-      <a href="/es/games.html">Juegos</a>
-      <a href="/es/websites.html">Sitios web</a>
-      <a href="/es/about.html">Nosotros</a>
-      <a href="/es/privacy.html">Políticas de privacidad</a>
-      <a href="/es/terms.html">Términos de uso</a>
-      <a href="/es/about.html#contact">Contacto</a>
-    </nav>
-    <small>&copy; <span id="year">2026</span> Acute By. Hecho con cuidado.</small>
+    <div class="foot-top">
+      <div class="foot-about">
+        <a class="brand" href="/es/" aria-label="Inicio de Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
+        <p>Un estudio independiente que crea juegos móviles acogedores y sitios web gratuitos para el día a día.</p>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Juegos</p>
+        <ul>
+          <li><a href="/es/jarlings/">Jarlings</a></li>
+          <li><a href="/es/mahjong-sunroom/">Mahjong Sunroom</a></li>
+          <li><a href="/es/paint-parade/">Paint Parade</a></li>
+          <li><a href="/es/one-touch-survivor/">One Touch Survivor</a></li>
+          <li><a href="/es/chrono-detective/">Chrono Detective</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Sitios web</p>
+        <ul>
+          <li><a href="https://www.fileicu.com/es/" target="_blank" rel="noopener">File ICU</a></li>
+          <li><a href="https://www.health-icu.com/es/" target="_blank" rel="noopener">Health ICU</a></li>
+          <li><a href="/es/file-icu-app/">App File ICU</a></li>
+          <li><a href="/es/health-icu-app/">App Health ICU</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Estudio</p>
+        <ul>
+          <li><a href="/es/about.html">Nosotros</a></li>
+          <li><a href="/es/games.html">Juegos</a></li>
+          <li><a href="/es/websites.html">Sitios web</a></li>
+          <li><a href="/es/contact.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <small>&copy; <span id="year">2026</span> Acute By. Hecho con cuidado.</small>
+      <nav aria-label="Pie de página">
+        <a href="/es/privacy.html">Políticas de privacidad</a>
+        <a href="/es/terms.html">Términos de uso</a>
+      </nav>
+    </div>
   </div>
 </footer>
 </body>

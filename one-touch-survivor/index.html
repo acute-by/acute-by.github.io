@@ -18,7 +18,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#170C2B">
+<meta name="theme-color" content="#FFF1E6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Acute By">
 <meta property="og:title" content="One Touch Survivor: One-Finger Arena Survival Game">
@@ -50,9 +50,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Noto+Sans+Arabic:wght@400;600;800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
-<script>document.documentElement.className+=' js'</script>
+<script>(function(d){d.className+=' js';try{var t=localStorage.getItem('acute_theme');if(t)d.setAttribute('data-theme',t)}catch(e){}})(document.documentElement)</script>
 <script src="/assets/site.js" defer></script>
 <script src="/assets/consent.js" defer></script>
 </head>
@@ -61,104 +61,135 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="38" height="38"><b>Acute <span>By</span></b></a>
+    <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
     <ul>
       <li><a class="active" href="/games.html">Games</a></li>
       <li><a href="/websites.html">Websites</a></li>
       <li><a href="/about.html">About us</a></li>
-      <li><a class="cta" href="/about.html#contact">Contact</a></li>
+      <li><a class="cta" href="/contact.html">Contact</a></li>
     </ul>
   </div>
 </header>
 
 <main>
-<div class="phero">
-  <span class="blob b1"></span><span class="blob b2"></span>
+<section class="product" id="overview">
   <div class="wrap">
-    <img class="app" src="/assets/games/survivor-icon.webp" alt="One Touch Survivor app icon" width="88" height="88">
-    <div>
-      <h1>One Touch Survivor</h1>
-      <div class="meta">One-finger arena survival</div>
-    </div>
-  </div>
-</div>
-
-<section class="detail-top" id="overview">
-  <div class="wrap">
-    <article class="game ots">
-      <div class="info">
+    <a class="top-back" href="/games.html">&larr; All games</a>
+    <div class="panel ots on">
+      <div class="copy">
+        <div class="pid"><img src="/assets/games/survivor-icon.webp" alt="One Touch Survivor app icon" width="56" height="56"><span class="genre">One-finger arena survival</span></div>
+        <h1>One Touch Survivor</h1>
         <p class="desc">One finger. One shield. Hold the line! Enemies close in from every side and fire glowing bolts. Turn your shield to face them, block everything and send it straight back.</p>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Coming soon to Android and iOS</span>
-          <a class="link" href="/privacy.html#one-touch-survivor">Privacy policy &rarr;</a>
-        </div>
+        <div class="foot"><span class="status"><i></i>Coming soon to Android and iOS</span><a href="/privacy.html#one-touch-survivor">Privacy policy &rarr;</a></div>
       </div>
       <div class="shots">
-        <img src="/assets/games/survivor-1.webp" alt="One Touch Survivor home screen with three heroes to choose from" width="360" height="730" loading="lazy">
-        <img src="/assets/games/survivor-2.webp" alt="One Touch Survivor gameplay: a perfect block against the Warden Prime boss" width="360" height="730" loading="lazy">
-        <img src="/assets/games/survivor-3.webp" alt="One Touch Survivor upgrade pick after clearing a wave" width="360" height="730" loading="lazy">
+        <div class="phone p2"><img src="/assets/games/survivor-1.webp" alt="One Touch Survivor home screen with three heroes to choose from" width="360" height="730" loading="lazy"></div>
+        <div class="phone p3"><img src="/assets/games/survivor-3.webp" alt="One Touch Survivor upgrade pick after clearing a wave" width="360" height="730" loading="lazy"></div>
+        <div class="phone p1"><img src="/assets/games/survivor-2.webp" alt="One Touch Survivor gameplay: a perfect block against the Warden Prime boss" width="360" height="730" loading="lazy"></div>
       </div>
-    </article>
-  </div>
-</section>
-
-<section class="values detail-section" aria-labelledby="how-title">
-  <div class="wrap">
-    <div class="head"><h2 id="how-title">How to play</h2></div>
-    <div class="grid4">
-      <div class="card"><div class="ic step">1</div><p>Touch and slide anywhere: your shield follows your finger.</p></div>
-      <div class="card"><div class="ic step">2</div><p>Block bolts to reflect them at your enemies.</p></div>
-      <div class="card"><div class="ic step">3</div><p>Block at the last moment for a PERFECT, which hits harder.</p></div>
-      <div class="card"><div class="ic step">4</div><p>Pick one of three new powers after each wave.</p></div>
     </div>
   </div>
 </section>
 
-<section class="detail-section" aria-labelledby="features-title">
+<section class="sec" aria-labelledby="how-title">
   <div class="wrap">
-    <div class="head"><h2 id="features-title">Features</h2></div>
-    <div class="grid3">
-      <div class="card"><h3>One-finger control</h3><p>Choose Point or Slide control, so your thumb never has to cover the action.</p></div>
-      <div class="card"><h3>Ten waves, two Wardens</h3><p>Slimes, archers, dashers and bombers, then two Warden bosses with their own attack patterns.</p></div>
-      <div class="card"><h3>Endless mode</h3><p>Cleared the arena? Endless mode opens, so see how far you can go.</p></div>
-      <div class="card"><h3>A new power every wave</h3><p>Twin Shield, Prism, Orbit Blade, Frost Aura and more, so every run builds differently.</p></div>
-      <div class="card"><h3>Three heroes</h3><p>The sturdy Knight, the Mage whose bolts seek enemies, and the glass-cannon Ranger.</p></div>
-      <div class="card"><h3>Grow stronger</h3><p>Earn coins for permanent upgrades, and take on a fresh Daily Run every day.</p></div>
+    <div class="sec-head solo reveal"><h2 id="how-title">How to play</h2></div>
+    <ol class="cards four">
+      <li class="card step reveal"><span class="step-n">1</span><p>Touch and slide anywhere: your shield follows your finger.</p></li>
+      <li class="card step reveal"><span class="step-n">2</span><p>Block bolts to reflect them at your enemies.</p></li>
+      <li class="card step reveal"><span class="step-n">3</span><p>Block at the last moment for a PERFECT, which hits harder.</p></li>
+      <li class="card step reveal"><span class="step-n">4</span><p>Pick one of three new powers after each wave.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec alt" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="sec-head solo reveal"><h2 id="features-title">Features</h2></div>
+    <div class="cards">
+      <div class="card reveal"><h3>One-finger control</h3><p>Choose Point or Slide control, so your thumb never has to cover the action.</p></div>
+      <div class="card reveal"><h3>Ten waves, two Wardens</h3><p>Slimes, archers, dashers and bombers, then two Warden bosses with their own attack patterns.</p></div>
+      <div class="card reveal"><h3>Endless mode</h3><p>Cleared the arena? Endless mode opens, so see how far you can go.</p></div>
+      <div class="card reveal"><h3>A new power every wave</h3><p>Twin Shield, Prism, Orbit Blade, Frost Aura and more, so every run builds differently.</p></div>
+      <div class="card reveal"><h3>Three heroes</h3><p>The sturdy Knight, the Mage whose bolts seek enemies, and the glass-cannon Ranger.</p></div>
+      <div class="card reveal"><h3>Grow stronger</h3><p>Earn coins for permanent upgrades, and take on a fresh Daily Run every day.</p></div>
     </div>
   </div>
 </section>
 
-<section class="detail-section detail-facts" aria-labelledby="facts-title">
-  <div class="wrap">
-    <div class="head"><h2 id="facts-title">At a glance</h2></div>
-    <dl class="facts">
-      <div><dt>Genre</dt><dd>Arena survival</dd></div>
-      <div><dt>What's inside</dt><dd>10 waves, 2 bosses, 3 heroes and Endless mode</dd></div>
-      <div><dt>Platforms</dt><dd>Android and iOS (coming soon)</dd></div>
-      <div><dt>Price</dt><dd>Free to play, with ads and optional purchases</dd></div>
-      <div><dt>Works offline</dt><dd>Yes</dd></div>
-      <div><dt>Language</dt><dd>English</dd></div>
-      <div><dt>Developer</dt><dd>Acute By</dd></div>
-    </dl>
-    <div class="head detail-more"><h2>More from Acute By</h2></div>
-    <ul class="feats more-list"><li><a href="/jarlings/">Jarlings: Sort Puzzle</a></li><li><a href="/mahjong-sunroom/">Mahjong Sunroom: Big Tiles</a></li><li><a href="/paint-parade/">Paint Parade: Pixel Puzzle</a></li><li><a href="/chrono-detective/">Chrono Detective</a></li><li><a href="/file-icu-app/">File ICU App</a></li><li><a href="/health-icu-app/">Health ICU App</a></li></ul>
-    <a class="back" href="/games.html">&larr; All games</a>
+<section class="sec" aria-labelledby="facts-title">
+  <div class="wrap glance">
+    <div class="reveal">
+      <h2 id="facts-title">At a glance</h2>
+      <dl class="facts">
+        <div><dt>Genre</dt><dd>Arena survival</dd></div>
+        <div><dt>What's inside</dt><dd>10 waves, 2 bosses, 3 heroes and Endless mode</dd></div>
+        <div><dt>Platforms</dt><dd>Android and iOS (coming soon)</dd></div>
+        <div><dt>Price</dt><dd>Free to play, with ads and optional purchases</dd></div>
+        <div><dt>Works offline</dt><dd>Yes</dd></div>
+        <div><dt>Language</dt><dd>English</dd></div>
+        <div><dt>Developer</dt><dd>Acute By</dd></div>
+      </dl>
+    </div>
+    <div class="reveal">
+      <h2>More from Acute By</h2>
+      <ul class="more">
+      <li><a href="/jarlings/"><img src="/assets/games/jarlings-icon.webp" alt="" width="46" height="46"><span><b>Jarlings: Sort Puzzle</b><small>Cozy colour-sorting puzzle</small></span></a></li>
+      <li><a href="/mahjong-sunroom/"><img src="/assets/games/mahjong-icon.webp" alt="" width="46" height="46"><span><b>Mahjong Sunroom: Big Tiles</b><small>Big-tile mahjong solitaire</small></span></a></li>
+      <li><a href="/paint-parade/"><img src="/assets/games/paint-icon.webp" alt="" width="46" height="46"><span><b>Paint Parade: Pixel Puzzle</b><small>Pixel art conveyor puzzle</small></span></a></li>
+      <li><a href="/chrono-detective/"><img src="/assets/games/chrono-icon.webp" alt="" width="46" height="46"><span><b>Chrono Detective</b><small>Cozy time travel puzzle</small></span></a></li>
+      <li><a href="/file-icu-app/"><span class="logo"><img src="/assets/sites/file-icu.svg" alt="" width="32" height="32"></span><span><b>File ICU App</b><small>PDF, image and text tools that work offline</small></span></a></li>
+      <li><a href="/health-icu-app/"><span class="logo"><img src="/assets/sites/health-icu.svg" alt="" width="32" height="32"></span><span><b>Health ICU App</b><small>Health calculators that work offline</small></span></a></li>
+      </ul>
+      <a class="back" href="/games.html">&larr; All games</a>
+    </div>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="34" height="34"><b>Acute <span>By</span></b></a>
-    <nav aria-label="Footer">
-      <a href="/games.html">Games</a>
-      <a href="/websites.html">Websites</a>
-      <a href="/about.html">About us</a>
-      <a href="/privacy.html">Privacy policies</a>
-      <a href="/terms.html">Terms of use</a>
-      <a href="/about.html#contact">Contact</a>
-    </nav>
-    <small>&copy; <span id="year">2026</span> Acute By. Made with care.</small>
+    <div class="foot-top">
+      <div class="foot-about">
+        <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
+        <p>An independent studio making cozy mobile games and free everyday websites.</p>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Games</p>
+        <ul>
+          <li><a href="/jarlings/">Jarlings</a></li>
+          <li><a href="/mahjong-sunroom/">Mahjong Sunroom</a></li>
+          <li><a href="/paint-parade/">Paint Parade</a></li>
+          <li><a href="/one-touch-survivor/">One Touch Survivor</a></li>
+          <li><a href="/chrono-detective/">Chrono Detective</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Websites</p>
+        <ul>
+          <li><a href="https://www.fileicu.com/" target="_blank" rel="noopener">File ICU</a></li>
+          <li><a href="https://www.health-icu.com/" target="_blank" rel="noopener">Health ICU</a></li>
+          <li><a href="/file-icu-app/">File ICU App</a></li>
+          <li><a href="/health-icu-app/">Health ICU App</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Studio</p>
+        <ul>
+          <li><a href="/about.html">About us</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/websites.html">Websites</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <small>&copy; <span id="year">2026</span> Acute By. Made with care.</small>
+      <nav aria-label="Footer">
+        <a href="/privacy.html">Privacy policies</a>
+        <a href="/terms.html">Terms of use</a>
+      </nav>
+    </div>
   </div>
 </footer>
 </body>

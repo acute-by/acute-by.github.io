@@ -19,7 +19,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#170C2B">
+<meta name="theme-color" content="#FFF1E6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Acute By">
 <meta property="og:title" content="Acute By: Cozy Mobile Games and Free Websites">
@@ -86,9 +86,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Noto+Sans+Arabic:wght@400;600;800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
-<script>document.documentElement.className+=' js'</script>
+<script>(function(d){d.className+=' js';try{var t=localStorage.getItem('acute_theme');if(t)d.setAttribute('data-theme',t)}catch(e){}})(document.documentElement)</script>
 <script src="/assets/site.js" defer></script>
 <script src="/assets/consent.js" defer></script>
 </head>
@@ -97,285 +97,221 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="38" height="38"><b>Acute <span>By</span></b></a>
+    <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
     <ul>
-      <li><a href="/games.html" data-i18n="nav_games">Games</a></li>
-      <li><a href="/websites.html" data-i18n="nav_websites">Websites</a></li>
-      <li><a href="/about.html" data-i18n="nav_about">About us</a></li>
-      <li><a class="cta" href="/about.html#contact" data-i18n="nav_contact">Contact</a></li>
+      <li><a href="/games.html">Games</a></li>
+      <li><a href="/websites.html">Websites</a></li>
+      <li><a href="/about.html">About us</a></li>
+      <li><a class="cta" href="/contact.html">Contact</a></li>
     </ul>
   </div>
 </header>
 
 <main>
 <section class="hero" aria-labelledby="hero-title">
-  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
   <div class="wrap">
-    <div>
-      <span class="pill" data-i18n="hero_pill"><i>NEW</i> Indie studio for games &amp; websites</span>
-      <h1 id="hero-title" data-i18n="hero_title"><span class="h1-brand">Acute By</span> Tiny apps.<br>Big <span class="grad">smiles.</span></h1>
-      <p class="lede" data-i18n="hero_lede">Acute By makes cozy, lightweight mobile games and free websites for everyday tasks. Both respect your time and your privacy.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="/games.html" data-i18n="btn_explore">Explore our games
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
-        <a class="btn btn-ghost" href="/websites.html" data-i18n="btn_websites">See our websites</a>
+    <div class="hero-grid">
+      <div class="reveal">
+        <h1 id="hero-title"><span class="h1-brand">Acute By</span> Tiny apps.<br>Big <span class="grad">smiles.</span></h1>
+        <p class="lede">Acute By makes cozy, lightweight mobile games, plus free websites and phone apps for everyday tasks. All of them respect your time and your privacy.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#games">Explore our games<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-soft" href="#websites">See our websites</a>
+        </div>
       </div>
-      <ul class="trust">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-i18n="trust_nosignup">No sign-up</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-i18n="trust_offline">Games play offline</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-i18n="trust_langs">Websites in 6 languages</span></li>
-      </ul>
-    </div>
-    <div class="stage" aria-hidden="true">
-      <div class="orbit o2"></div>
-      <div class="orbit">
-        <span class="sat s1"><img src="/assets/games/jarlings-icon.webp" alt="" width="96" height="96"></span>
-        <span class="sat s2"><img src="/assets/games/mahjong-icon.webp" alt="" width="96" height="96"></span>
-        <span class="sat s3"><img src="/assets/games/paint-icon.webp" alt="" width="96" height="96"></span>
-        <span class="sat s4"><img src="/assets/games/survivor-icon.webp" alt="" width="96" height="96"></span>
-        <span class="sat s5"><img src="/assets/games/chrono-icon.webp" alt="" width="96" height="96"></span>
+      <div class="stage" aria-hidden="true">
+        <div class="phone p2"><img src="/assets/games/mahjong-1.webp" alt="" width="360" height="730"></div>
+        <div class="phone p1"><img src="/assets/games/jarlings-1.webp" alt="" width="360" height="730"></div>
+        <div class="phone p3"><img src="/assets/games/chrono-2.webp" alt="" width="360" height="730"></div>
+        <span class="float a1"><img src="/assets/games/paint-icon.webp" alt="" width="76" height="76"></span>
+        <span class="float a2"><img src="/assets/games/survivor-icon.webp" alt="" width="64" height="64"></span>
+        <span class="float a3"><img src="/assets/games/jarlings-icon.webp" alt="" width="58" height="58"></span>
       </div>
-      <div class="tile"><img src="/assets/logo.svg" alt="" width="240" height="240"></div>
-      <i class="spark" style="left:8%;top:6%"></i>
-      <i class="spark" style="right:14%;bottom:12%;animation-delay:-1.1s;width:10px;height:10px"></i>
-      <i class="spark" style="left:2%;bottom:24%;animation-delay:-2.2s;width:9px;height:9px"></i>
     </div>
-  </div>
-  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 50C220 90 420 92 720 60S1220 8 1440 40V90H0Z"/></svg>
-</section>
-
-<section class="parts" aria-label="What Acute By makes">
-  <div class="wrap">
-    <a class="part games-part reveal" href="#games">
-      <span class="part-icons" aria-hidden="true"><img src="/assets/games/jarlings-icon.webp" alt="" width="56" height="56"><img src="/assets/games/mahjong-icon.webp" alt="" width="56" height="56"><img src="/assets/games/paint-icon.webp" alt="" width="56" height="56"><img src="/assets/games/survivor-icon.webp" alt="" width="56" height="56"><img src="/assets/games/chrono-icon.webp" alt="" width="56" height="56"></span>
-      <strong>Games</strong>
-      <span class="part-text">Five cozy mobile games: sort, mahjong, pixel art, arena action and time puzzles.</span>
-      <span class="part-go">See the games &rarr;</span>
-    </a>
-    <a class="part sites-part reveal" href="#websites">
-      <span class="part-icons" aria-hidden="true"><span class="logo"><img src="/assets/sites/file-icu.svg" alt="" width="44" height="44"></span><span class="logo"><img src="/assets/sites/health-icu.svg" alt="" width="44" height="44"></span></span>
-      <strong>Websites</strong>
-      <span class="part-text">File ICU for PDFs, images and text, and Health ICU for health calculators. Free in your browser.</span>
-      <span class="part-go">See the websites &rarr;</span>
-    </a>
+    <div class="stats">
+      <div class="stat"><strong>5</strong><span>Mobile games</span></div>
+      <div class="stat"><strong>2</strong><span>Free websites</span></div>
+      <div class="stat"><strong>2</strong><span>Phone apps</span></div>
+      <div class="stat"><strong>6</strong><span>Languages</span></div>
+    </div>
   </div>
 </section>
 
-<section id="games" aria-labelledby="games-title">
+<div class="marquee" aria-hidden="true"><div class="track"><span><img src="/assets/games/jarlings-icon.webp" alt="">Jarlings</span><span><i>&#x2726;</i></span><span><img src="/assets/games/mahjong-icon.webp" alt="">Mahjong Sunroom</span><span><i>&#x2726;</i></span><span><img src="/assets/games/paint-icon.webp" alt="">Paint Parade</span><span><i>&#x2726;</i></span><span><img src="/assets/games/survivor-icon.webp" alt="">One Touch Survivor</span><span><i>&#x2726;</i></span><span><img src="/assets/games/chrono-icon.webp" alt="">Chrono Detective</span><span><i>&#x2726;</i></span><span>File ICU</span><span><i>&#x2726;</i></span><span>Health ICU</span><span><i>&#x2726;</i></span><span><img src="/assets/games/jarlings-icon.webp" alt="">Jarlings</span><span><i>&#x2726;</i></span><span><img src="/assets/games/mahjong-icon.webp" alt="">Mahjong Sunroom</span><span><i>&#x2726;</i></span><span><img src="/assets/games/paint-icon.webp" alt="">Paint Parade</span><span><i>&#x2726;</i></span><span><img src="/assets/games/survivor-icon.webp" alt="">One Touch Survivor</span><span><i>&#x2726;</i></span><span><img src="/assets/games/chrono-icon.webp" alt="">Chrono Detective</span><span><i>&#x2726;</i></span><span>File ICU</span><span><i>&#x2726;</i></span><span>Health ICU</span><span><i>&#x2726;</i></span></div></div>
+
+<section class="sec" id="games" aria-labelledby="games-title">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Our games</span>
-      <h2 id="games-title">Cozy games you'll <span class="grad">keep coming back to</span></h2>
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">Our games</span>
+        <h2 id="games-title">Cozy games you'll <span class="grad">keep coming back to</span></h2>
+      </div>
       <p>Quick to learn, satisfying to master, and perfect for a five-minute break or a long, calm evening.</p>
     </div>
-
-    <article class="game jar reveal" id="jarlings" aria-labelledby="jar-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/jarlings-icon.webp" alt="Jarlings app icon" width="84" height="84">
-          <div><h3 id="jar-title">Jarlings: Sort Puzzle</h3><div class="genre">Sort puzzle · 100 levels · 10 worlds</div></div>
-        </div>
-        <p class="desc">Sort squishy jelly Jarlings into jars and hear every full jar sing. Each level is a little tougher than the last, with a treasure chest waiting at every tenth.</p>
-        <ul class="feats">
-          <li>Each level tougher</li><li>Colour-blind friendly</li><li>Mystery Jarlings</li><li>Daily gifts</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Coming soon to Android and iOS</span>
-          <a class="link" href="/jarlings/">Full details &rarr;</a>
-          <a class="link" href="/privacy.html#jarlings">Privacy policy &rarr;</a>
-        </div>
+    <div class="showcase tabbed reveal">
+      <div class="tabs" role="tablist" aria-label="Games">
+        <button class="tab jar" type="button" role="tab" id="tab-jarlings" aria-controls="jarlings" aria-selected="true"><img src="/assets/games/jarlings-icon.webp" alt="" width="56" height="56"><span><b>Jarlings</b><small>Sort puzzle</small></span></button>
+        <button class="tab mah" type="button" role="tab" id="tab-mahjong-sunroom" aria-controls="mahjong-sunroom" aria-selected="false" tabindex="-1"><img src="/assets/games/mahjong-icon.webp" alt="" width="56" height="56"><span><b>Mahjong Sunroom</b><small>Mahjong solitaire</small></span></button>
+        <button class="tab pp" type="button" role="tab" id="tab-paint-parade" aria-controls="paint-parade" aria-selected="false" tabindex="-1"><img src="/assets/games/paint-icon.webp" alt="" width="56" height="56"><span><b>Paint Parade</b><small>Pixel-art puzzle</small></span></button>
+        <button class="tab ots" type="button" role="tab" id="tab-one-touch-survivor" aria-controls="one-touch-survivor" aria-selected="false" tabindex="-1"><img src="/assets/games/survivor-icon.webp" alt="" width="56" height="56"><span><b>One Touch Survivor</b><small>Arena action</small></span></button>
+        <button class="tab cd" type="button" role="tab" id="tab-chrono-detective" aria-controls="chrono-detective" aria-selected="false" tabindex="-1"><img src="/assets/games/chrono-icon.webp" alt="" width="56" height="56"><span><b>Chrono Detective</b><small>Time puzzles</small></span></button>
+        <a class="more-link" href="/games.html">See the games &rarr;</a>
       </div>
-      <div class="shots">
-        <img src="/assets/games/jarlings-2.webp" alt="Jarlings world map with ten themed worlds" width="360" height="730" loading="lazy">
-        <img src="/assets/games/jarlings-1.webp" alt="Jarlings gameplay: sorting jelly Jarlings into jars" width="360" height="730" loading="lazy">
-        <img src="/assets/games/jarlings-3.webp" alt="Jarlings treasure chest every ten levels" width="360" height="730" loading="lazy">
+      <div class="panels">
+        <article class="panel jar on" id="jarlings" role="tabpanel" aria-labelledby="tab-jarlings">
+          <div class="copy">
+            <span class="genre">Sort puzzle · 100 levels · 10 worlds</span>
+            <h3 id="jar-title">Jarlings: Sort Puzzle</h3>
+            <p class="desc">Sort squishy jelly Jarlings into jars and hear every full jar sing. Each level is a little tougher than the last, with a treasure chest waiting at every tenth.</p>
+            <ul class="chips"><li>Each level tougher</li><li>Colour-blind friendly</li><li>Mystery Jarlings</li><li>Daily gifts</li></ul>
+            <div class="foot"><span class="status"><i></i>Coming soon to Android and iOS</span><a href="/jarlings/">Full details &rarr;</a><a href="/privacy.html#jarlings">Privacy policy &rarr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/jarlings-2.webp" alt="Jarlings world map with ten themed worlds" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/jarlings-3.webp" alt="Jarlings treasure chest every ten levels" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/jarlings-1.webp" alt="Jarlings gameplay: sorting jelly Jarlings into jars" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel mah" id="mahjong-sunroom" role="tabpanel" aria-labelledby="tab-mahjong-sunroom">
+          <div class="copy">
+            <span class="genre">Mahjong solitaire · 100 boards · 10 gardens</span>
+            <h3 id="mah-title">Mahjong Sunroom: Big Tiles</h3>
+            <p class="desc">Relaxing mahjong solitaire with big, easy-to-read tiles and corner numbers. Walk a garden path of 100 boards, earn stars and grow a new plant in your sunroom with every win.</p>
+            <ul class="chips"><li>Extra-large tiles</li><li>Every board solvable</li><li>Gentle hints</li><li>Grow a sunroom</li></ul>
+            <div class="foot"><span class="status"><i></i>Coming soon to Android and iOS</span><a href="/mahjong-sunroom/">Full details &rarr;</a><a href="/privacy.html#mahjong-sunroom">Privacy policy &rarr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/mahjong-2.webp" alt="Mahjong Sunroom garden path with ten gardens" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/mahjong-3.webp" alt="Mahjong Sunroom board complete with three stars" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/mahjong-1.webp" alt="Mahjong Sunroom board with big, clear tiles" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel pp" id="paint-parade" role="tabpanel" aria-labelledby="tab-paint-parade">
+          <div class="copy">
+            <span class="genre">Pixel-art puzzle · 100 pictures · 10 studios</span>
+            <h3 id="pp-title">Paint Parade: Pixel Puzzle</h3>
+            <p class="desc">Send cheerful paint-pot painters around the belt and watch a pixel picture appear, one splash at a time. Every finished picture is framed in your gallery.</p>
+            <ul class="chips"><li>Paint to reveal</li><li>Every level solvable</li><li>Gallery to collect</li><li>Colour-blind symbols</li></ul>
+            <div class="foot"><span class="status"><i></i>Coming soon to Android and iOS</span><a href="/paint-parade/">Full details &rarr;</a><a href="/privacy.html#paint-parade">Privacy policy &rarr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/paint-2.webp" alt="Paint Parade parade route through ten studios" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/paint-3.webp" alt="Paint Parade masterpiece with three stars" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/paint-1.webp" alt="Paint Parade gameplay: painters splash a pixel fish" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel ots" id="one-touch-survivor" role="tabpanel" aria-labelledby="tab-one-touch-survivor">
+          <div class="copy">
+            <span class="genre">Arena action · 10 waves · 2 bosses · Endless mode</span>
+            <h3 id="ots-title">One Touch Survivor</h3>
+            <p class="desc">Hold the line with a single finger. Turn your glowing shield to block everything coming at you, land a perfect block to fire it straight back, and pick a new power after every wave.</p>
+            <ul class="chips"><li>One-finger controls</li><li>Three heroes</li><li>New build every run</li><li>Daily run</li></ul>
+            <div class="foot"><span class="status"><i></i>Coming soon to Android and iOS</span><a href="/one-touch-survivor/">Full details &rarr;</a><a href="/privacy.html#one-touch-survivor">Privacy policy &rarr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/survivor-1.webp" alt="One Touch Survivor home screen with three heroes to choose from" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/survivor-3.webp" alt="One Touch Survivor upgrade pick after clearing a wave" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/survivor-2.webp" alt="One Touch Survivor gameplay: a perfect block against the Warden Prime boss" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel cd" id="chrono-detective" role="tabpanel" aria-labelledby="tab-chrono-detective">
+          <div class="copy">
+            <span class="genre">Time puzzles · 30 cases · A new scene every time</span>
+            <h3 id="cd-title">Chrono Detective</h3>
+            <p class="desc">The crime has already happened. Rewind the morning, change one small thing (lock a door, ring a phone, switch off the lights) and replay it until the thief is caught red-handed.</p>
+            <ul class="chips"><li>Rewind &amp; replay</li><li>Banks, museums, jewelers, casinos</li><li>Hints when you're stuck</li><li>Play offline</li></ul>
+            <div class="foot"><span class="status"><i></i>Coming soon to Android and iOS</span><a href="/chrono-detective/">Full details &rarr;</a><a href="/privacy.html#chrono-detective">Privacy policy &rarr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/chrono-1.webp" alt="Chrono Detective case board with training cases pinned to a cork board" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/chrono-3.webp" alt="Chrono Detective case closed with three stars" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/chrono-2.webp" alt="Chrono Detective investigating a museum robbery on the timeline" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
       </div>
-    </article>
-
-    <article class="game mah reveal" id="mahjong-sunroom" aria-labelledby="mah-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/mahjong-icon.webp" alt="Mahjong Sunroom app icon" width="84" height="84">
-          <div><h3 id="mah-title">Mahjong Sunroom: Big Tiles</h3><div class="genre">Mahjong solitaire · 100 boards · 10 gardens</div></div>
-        </div>
-        <p class="desc">Relaxing mahjong solitaire with big, easy-to-read tiles and corner numbers. Walk a garden path of 100 boards, earn stars and grow a new plant in your sunroom with every win.</p>
-        <ul class="feats">
-          <li>Extra-large tiles</li><li>Every board solvable</li><li>Gentle hints</li><li>Grow a sunroom</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Coming soon to Android and iOS</span>
-          <a class="link" href="/mahjong-sunroom/">Full details &rarr;</a>
-          <a class="link" href="/privacy.html#mahjong-sunroom">Privacy policy &rarr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/mahjong-2.webp" alt="Mahjong Sunroom garden path with ten gardens" width="360" height="730" loading="lazy">
-        <img src="/assets/games/mahjong-1.webp" alt="Mahjong Sunroom board with big, clear tiles" width="360" height="730" loading="lazy">
-        <img src="/assets/games/mahjong-3.webp" alt="Mahjong Sunroom board complete with three stars" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <article class="game pp reveal" id="paint-parade" aria-labelledby="pp-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/paint-icon.webp" alt="Paint Parade app icon" width="84" height="84">
-          <div><h3 id="pp-title">Paint Parade: Pixel Puzzle</h3><div class="genre">Pixel-art puzzle · 100 pictures · 10 studios</div></div>
-        </div>
-        <p class="desc">Send cheerful paint-pot painters around the belt and watch a pixel picture appear, one splash at a time. Every finished picture is framed in your gallery.</p>
-        <ul class="feats">
-          <li>Paint to reveal</li><li>Every level solvable</li><li>Gallery to collect</li><li>Colour-blind symbols</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Coming soon to Android and iOS</span>
-          <a class="link" href="/paint-parade/">Full details &rarr;</a>
-          <a class="link" href="/privacy.html#paint-parade">Privacy policy &rarr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/paint-2.webp" alt="Paint Parade parade route through ten studios" width="360" height="730" loading="lazy">
-        <img src="/assets/games/paint-1.webp" alt="Paint Parade gameplay: painters splash a pixel fish" width="360" height="730" loading="lazy">
-        <img src="/assets/games/paint-3.webp" alt="Paint Parade masterpiece with three stars" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <article class="game ots reveal" id="one-touch-survivor" aria-labelledby="ots-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/survivor-icon.webp" alt="One Touch Survivor app icon" width="84" height="84">
-          <div><h3 id="ots-title">One Touch Survivor</h3><div class="genre">Arena action · 10 waves · 2 bosses · Endless mode</div></div>
-        </div>
-        <p class="desc">Hold the line with a single finger. Turn your glowing shield to block everything coming at you, land a perfect block to fire it straight back, and pick a new power after every wave.</p>
-        <ul class="feats">
-          <li>One-finger controls</li><li>Three heroes</li><li>New build every run</li><li>Daily run</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Coming soon to Android and iOS</span>
-          <a class="link" href="/one-touch-survivor/">Full details &rarr;</a>
-          <a class="link" href="/privacy.html#one-touch-survivor">Privacy policy &rarr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/survivor-1.webp" alt="One Touch Survivor home screen with three heroes to choose from" width="360" height="730" loading="lazy">
-        <img src="/assets/games/survivor-2.webp" alt="One Touch Survivor gameplay: a perfect block against the Warden Prime boss" width="360" height="730" loading="lazy">
-        <img src="/assets/games/survivor-3.webp" alt="One Touch Survivor upgrade pick after clearing a wave" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <article class="game cd reveal" id="chrono-detective" aria-labelledby="cd-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/chrono-icon.webp" alt="Chrono Detective app icon" width="84" height="84">
-          <div><h3 id="cd-title">Chrono Detective</h3><div class="genre">Time puzzles · 30 cases · A new scene every time</div></div>
-        </div>
-        <p class="desc">The crime has already happened. Rewind the morning, change one small thing (lock a door, ring a phone, switch off the lights) and replay it until the thief is caught red-handed.</p>
-        <ul class="feats">
-          <li>Rewind &amp; replay</li><li>Banks, museums, jewelers, casinos</li><li>Hints when you're stuck</li><li>Play offline</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Coming soon to Android and iOS</span>
-          <a class="link" href="/chrono-detective/">Full details &rarr;</a>
-          <a class="link" href="/privacy.html#chrono-detective">Privacy policy &rarr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/chrono-1.webp" alt="Chrono Detective case board with training cases pinned to a cork board" width="360" height="730" loading="lazy">
-        <img src="/assets/games/chrono-2.webp" alt="Chrono Detective investigating a museum robbery on the timeline" width="360" height="730" loading="lazy">
-        <img src="/assets/games/chrono-3.webp" alt="Chrono Detective case closed with three stars" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <div class="soon reveal">
-      <div class="bubbles" aria-hidden="true"><span>&#x2726;</span><span>?</span><span>+</span></div>
-      <div>
-        <h3>More games &amp; apps in the workshop</h3>
-        <p>New ideas are always brewing. Want to hear about them first?</p>
-      </div>
-      <a class="btn btn-primary" href="#contact">Keep me posted</a>
     </div>
   </div>
 </section>
 
-<section class="values" id="promise" aria-labelledby="promise-title">
+<section class="sec alt" id="promise" aria-labelledby="promise-title">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Our promise</span>
-      <h2 id="promise-title" data-i18n="promise_title">Small on your phone. <span class="grad">Big on care.</span></h2>
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">Our promise</span>
+        <h2 id="promise-title">Small on your phone. <span class="grad">Big on care.</span></h2>
+      </div>
       <p>Every game we make follows the same four rules.</p>
     </div>
-    <div class="grid4">
-      <div class="card reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 3.8a6 6 0 0 0-8.5 0L5 10.5V19h8.5l6.7-6.7a6 6 0 0 0 0-8.5zM16 8 2 22M17.5 15H9"/></svg></div>
-        <h3 data-i18n="p1_title">Light as a feather</h3>
-        <p data-i18n="p1_desc">Tiny downloads, quick starts and smooth play, even on older phones.</p>
+    <div class="pgrid">
+      <div class="pitem reveal"><span class="num">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Light as a feather</h3>
+        <p>Tiny downloads, quick starts and smooth play, even on older phones.</p>
       </div>
-      <div class="card reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-        <h3 data-i18n="p2_title">Private by default</h3>
-        <p data-i18n="p2_desc">No accounts and no sign-ups. Your progress stays on your device.</p>
+      <div class="pitem reveal"><span class="num">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Private by default</h3>
+        <p>No accounts and no sign-ups. Your progress stays on your device.</p>
       </div>
-      <div class="card reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
-        <h3 data-i18n="p3_title">Fair &amp; friendly</h3>
-        <p data-i18n="p3_desc">No energy timers and no pay-to-win. Wherever a version has ads, videos are always your choice.</p>
+      <div class="pitem reveal"><span class="num">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M3 7h18M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg></div>
+        <h3>Fair &amp; friendly</h3>
+        <p>No energy timers and no pay-to-win. Wherever a version has ads, videos are always your choice.</p>
       </div>
-      <div class="card reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M4 9l8 2 8-2M12 11v5l-3 6M12 16l3 6"/></svg></div>
-        <h3 data-i18n="p4_title">Made for everyone</h3>
-        <p data-i18n="p4_desc">Big, clear visuals, colour-blind friendly cues and relaxed pacing.</p>
+      <div class="pitem reveal"><span class="num">04</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+        <h3>Made for everyone</h3>
+        <p>Big, clear visuals, colour-blind friendly cues and relaxed pacing.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="websites" id="websites" aria-labelledby="websites-title">
+<section class="sec" id="websites" aria-labelledby="websites-title">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Our websites</span>
-      <h2 id="websites-title">Free tools <span class="grad">in your browser</span></h2>
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">Our websites</span>
+        <h2 id="websites-title">Free tools <span class="grad">in your browser</span></h2>
+      </div>
       <p>No sign-up and no install. Both sites work in English, French, Spanish, German, Arabic and Urdu.</p>
     </div>
     <div class="sites">
-      <article class="site reveal" aria-labelledby="fileicu-title">
-        <div class="top">
-          <span class="logo"><img src="/assets/sites/file-icu.svg" alt="" width="56" height="56"></span>
-          <div><h3 id="fileicu-title">File ICU</h3><div class="genre">78 free online file tools</div></div>
-        </div>
+      <article class="site s-file reveal" aria-labelledby="fileicu-title">
+        <div class="top"><span class="logo"><img src="/assets/sites/file-icu.svg" alt="File ICU logo" width="52" height="52"></span><span class="tag">Free online file tools</span></div>
+        <h3 id="fileicu-title">File ICU</h3>
         <p>Merge, split and compress PDFs, convert and resize images, clean up text, format code and run everyday calculators. The tools work on your files in your browser, so the files are not uploaded for processing.</p>
-        <ul class="feats"><li>23 PDF tools</li><li>11 image tools</li><li>13 text tools</li><li>16 developer tools</li><li>15 calculators</li></ul>
-        <div class="row">
-          <a class="btn btn-primary" href="https://www.fileicu.com/" target="_blank" rel="noopener">Visit File ICU</a>
-          <a class="link" href="/file-icu-app/">The app &rarr;</a>
-          <a class="link" href="https://www.fileicu.com/privacy-policy/" target="_blank" rel="noopener">Privacy policy &rarr;</a>
+        <ul class="chips"><li>PDF tools</li><li>Image tools</li><li>Text tools</li><li>Developer tools</li><li>Calculators</li></ul>
+        <a class="app-row" href="/file-icu-app/"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><span><b>Also on your phone</b><small>Coming soon to Android and iOS</small></span></a>
+        <div class="foot">
+          <a class="btn btn-primary" href="https://www.fileicu.com/" target="_blank" rel="noopener">Visit File ICU<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a href="https://www.fileicu.com/privacy-policy/" target="_blank" rel="noopener">Privacy policy &rarr;</a>
         </div>
       </article>
-      <article class="site reveal" aria-labelledby="healthicu-title">
-        <div class="top">
-          <span class="logo"><img src="/assets/sites/health-icu.svg" alt="" width="56" height="56"></span>
-          <div><h3 id="healthicu-title">Health ICU</h3><div class="genre">28 free health calculators</div></div>
-        </div>
+      <article class="site s-health reveal" aria-labelledby="healthicu-title">
+        <div class="top"><span class="logo"><img src="/assets/sites/health-icu.svg" alt="Health ICU logo" width="52" height="52"></span><span class="tag">Free health calculators</span></div>
+        <h3 id="healthicu-title">Health ICU</h3>
         <p>BMI, calories, macros, heart rate zones, running pace, cycles and due dates, sleep, and blood test unit converters. Each page names its formula and sources. The values you enter stay in your browser. Results are estimates, not medical advice.</p>
-        <ul class="feats"><li>Weight &amp; body</li><li>Nutrition</li><li>Fitness</li><li>Women's health</li><li>Sleep</li><li>Converters</li></ul>
-        <div class="row">
-          <a class="btn btn-primary" href="https://www.health-icu.com/" target="_blank" rel="noopener">Visit Health ICU</a>
-          <a class="link" href="/health-icu-app/">The app &rarr;</a>
-          <a class="link" href="https://www.health-icu.com/privacy-policy/" target="_blank" rel="noopener">Privacy policy &rarr;</a>
+        <ul class="chips"><li>Weight &amp; body</li><li>Nutrition</li><li>Fitness</li><li>Women's health</li><li>Sleep</li><li>Converters</li></ul>
+        <a class="app-row" href="/health-icu-app/"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><span><b>Also on your phone</b><small>Coming soon to Android and iOS</small></span></a>
+        <div class="foot">
+          <a class="btn btn-primary" href="https://www.health-icu.com/" target="_blank" rel="noopener">Visit Health ICU<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a href="https://www.health-icu.com/privacy-policy/" target="_blank" rel="noopener">Privacy policy &rarr;</a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section id="contact" aria-labelledby="contact-title">
+<section class="sec-cta" id="contact" aria-labelledby="contact-title">
   <div class="wrap">
-    <div class="contact reveal">
-      <img class="mark" src="/assets/logo.svg" alt="" width="340" height="340">
-      <img class="mark l" src="/assets/logo.svg" alt="" width="240" height="240">
+    <div class="cta reveal">
       <h2 id="contact-title">Say hello!</h2>
       <p>Questions, ideas, bug reports or just a kind word. We read every message.</p>
       <div class="mail">
         <code>support@fileicu.com</code>
-        <button class="btn copy" type="button" data-copy="support@fileicu.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copy</span></button>
-        <a class="btn btn-white" href="mailto:support@fileicu.com">Send email</a>
+        <button class="btn copy" type="button" data-copy="support@fileicu.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copy</span></button>
+        <a class="btn btn-white" href="mailto:support@fileicu.com">Send email<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </div>
@@ -384,16 +320,47 @@
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="34" height="34"><b>Acute <span>By</span></b></a>
-    <nav aria-label="Footer">
-      <a href="/games.html">Games</a>
-      <a href="/websites.html">Websites</a>
-      <a href="/about.html">About us</a>
-      <a href="/privacy.html">Privacy policies</a>
-      <a href="/terms.html">Terms of use</a>
-      <a href="/about.html#contact">Contact</a>
-    </nav>
-    <small>&copy; <span id="year">2026</span> Acute By. Made with care.</small>
+    <div class="foot-top">
+      <div class="foot-about">
+        <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
+        <p>An independent studio making cozy mobile games and free everyday websites.</p>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Games</p>
+        <ul>
+          <li><a href="/jarlings/">Jarlings</a></li>
+          <li><a href="/mahjong-sunroom/">Mahjong Sunroom</a></li>
+          <li><a href="/paint-parade/">Paint Parade</a></li>
+          <li><a href="/one-touch-survivor/">One Touch Survivor</a></li>
+          <li><a href="/chrono-detective/">Chrono Detective</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Websites</p>
+        <ul>
+          <li><a href="https://www.fileicu.com/" target="_blank" rel="noopener">File ICU</a></li>
+          <li><a href="https://www.health-icu.com/" target="_blank" rel="noopener">Health ICU</a></li>
+          <li><a href="/file-icu-app/">File ICU App</a></li>
+          <li><a href="/health-icu-app/">Health ICU App</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Studio</p>
+        <ul>
+          <li><a href="/about.html">About us</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/websites.html">Websites</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <small>&copy; <span id="year">2026</span> Acute By. Made with care.</small>
+      <nav aria-label="Footer">
+        <a href="/privacy.html">Privacy policies</a>
+        <a href="/terms.html">Terms of use</a>
+      </nav>
+    </div>
   </div>
 </footer>
 </body>

@@ -18,7 +18,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#170C2B">
+<meta name="theme-color" content="#FFF1E6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Acute By">
 <meta property="og:title" content="Paint Parade: Pixel-Art-Rätselspiel">
@@ -50,9 +50,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Noto+Sans+Arabic:wght@400;600;800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
-<script>document.documentElement.className+=' js'</script>
+<script>(function(d){d.className+=' js';try{var t=localStorage.getItem('acute_theme');if(t)d.setAttribute('data-theme',t)}catch(e){}})(document.documentElement)</script>
 <script src="/assets/site.js" defer></script>
 <script src="/assets/consent.js" defer></script>
 </head>
@@ -61,104 +61,135 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="/de/" aria-label="Startseite von Acute By"><img src="/assets/logo.svg" alt="" width="38" height="38"><b>Acute <span>By</span></b></a>
+    <a class="brand" href="/de/" aria-label="Startseite von Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
     <ul>
       <li><a class="active" href="/de/games.html">Spiele</a></li>
       <li><a href="/de/websites.html">Websites</a></li>
       <li><a href="/de/about.html">Über uns</a></li>
-      <li><a class="cta" href="/de/about.html#contact">Kontakt</a></li>
+      <li><a class="cta" href="/de/contact.html">Kontakt</a></li>
     </ul>
   </div>
 </header>
 
 <main>
-<div class="phero">
-  <span class="blob b1"></span><span class="blob b2"></span>
+<section class="product" id="overview">
   <div class="wrap">
-    <img class="app" src="/assets/games/paint-icon.webp" alt="App-Symbol von Paint Parade" width="88" height="88">
-    <div>
-      <h1>Paint Parade: Pixel Puzzle</h1>
-      <div class="meta">Pixel-Art-Rätsel auf dem Förderband</div>
-    </div>
-  </div>
-</div>
-
-<section class="detail-top" id="overview">
-  <div class="wrap">
-    <article class="game pp">
-      <div class="info">
+    <a class="top-back" href="/de/games.html">&larr; Alle Spiele</a>
+    <div class="panel pp on">
+      <div class="copy">
+        <div class="pid"><img src="/assets/games/paint-icon.webp" alt="App-Symbol von Paint Parade" width="56" height="56"><span class="genre">Pixel-Art-Rätsel auf dem Förderband</span></div>
+        <h1>Paint Parade: Pixel Puzzle</h1>
         <p class="desc">Fröhliche kleine Maler fahren auf einem Förderband um ein leeres Bild. Jeder spritzt seine Farbe auf das erste Pixel, das er in jeder Zeile und Spalte sieht, aber nur, wenn dieses Pixel seine Farbe hat. Wählen Sie, wer als Nächstes fährt, und sehen Sie zu, wie ein Meisterwerk entsteht.</p>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Bald für Android und iOS</span>
-          <a class="link" href="/de/privacy.html#paint-parade">Datenschutzerklärung &rarr;</a>
-        </div>
+        <div class="foot"><span class="status"><i></i>Bald für Android und iOS</span><a href="/de/privacy.html#paint-parade">Datenschutzerklärung &rarr;</a></div>
       </div>
       <div class="shots">
-        <img src="/assets/games/paint-2.webp" alt="Paradestrecke von Paint Parade durch zehn Ateliers" width="360" height="730" loading="lazy">
-        <img src="/assets/games/paint-1.webp" alt="Paint-Parade-Spielszene: Maler bespritzen einen Pixelfisch" width="360" height="730" loading="lazy">
-        <img src="/assets/games/paint-3.webp" alt="Paint-Parade-Meisterwerk mit drei Sternen" width="360" height="730" loading="lazy">
+        <div class="phone p2"><img src="/assets/games/paint-2.webp" alt="Paradestrecke von Paint Parade durch zehn Ateliers" width="360" height="730" loading="lazy"></div>
+        <div class="phone p3"><img src="/assets/games/paint-3.webp" alt="Paint-Parade-Meisterwerk mit drei Sternen" width="360" height="730" loading="lazy"></div>
+        <div class="phone p1"><img src="/assets/games/paint-1.webp" alt="Paint-Parade-Spielszene: Maler bespritzen einen Pixelfisch" width="360" height="730" loading="lazy"></div>
       </div>
-    </article>
-  </div>
-</section>
-
-<section class="values detail-section" aria-labelledby="how-title">
-  <div class="wrap">
-    <div class="head"><h2 id="how-title">So wird gespielt</h2></div>
-    <div class="grid4">
-      <div class="card"><div class="ic step">1</div><p>Tippen Sie auf einen Maler, um ihn um das Bild zu schicken.</p></div>
-      <div class="card"><div class="ic step">2</div><p>Maler malen nur ihre eigene Farbe und nur das, was sie erreichen.</p></div>
-      <div class="card"><div class="ic step">3</div><p>Maler mit Farbe im Topf warten auf der Bank, also lassen Sie sie nicht voll werden.</p></div>
-      <div class="card"><div class="ic step">4</div><p>Beenden Sie das Bild, um es in Ihrer Galerie zu rahmen und bis zu drei Sterne zu verdienen.</p></div>
     </div>
   </div>
 </section>
 
-<section class="detail-section" aria-labelledby="features-title">
+<section class="sec" aria-labelledby="how-title">
   <div class="wrap">
-    <div class="head"><h2 id="features-title">Funktionen</h2></div>
-    <div class="grid3">
-      <div class="card"><h3>100 Bilder, 10 Ateliers</h3><p>Herzen, Kätzchen, Cupcakes, Wale, Raketen und vieles mehr, alle auf Lösbarkeit geprüft.</p></div>
-      <div class="card"><h3>Ihre Galerie</h3><p>Jedes fertige Bild wird gerahmt, und Sie können es für eine perfekte Wertung wiederholen.</p></div>
-      <div class="card"><h3>Jeden Tag Belohnungen</h3><p>Jeden Tag ein Gratisgeschenk, eine Sternentruhe zum Füllen und ein neues Tagesbild zum Malen.</p></div>
-      <div class="card"><h3>Überraschend tiefgründig</h3><p>Leicht zu lernen, mit viel zu planen. Spulen Sie vor, wenn Ihr Plan steht.</p></div>
-      <div class="card"><h3>Goldener Maler</h3><p>Finden Sie den goldenen Maler für einen Gratishinweis.</p></div>
-      <div class="card"><h3>Für alle gemacht</h3><p>Farbenblind-freundliche Symbole, eine Option für weniger Bewegung und flüssiges Spielen auf älteren Handys.</p></div>
+    <div class="sec-head solo reveal"><h2 id="how-title">So wird gespielt</h2></div>
+    <ol class="cards four">
+      <li class="card step reveal"><span class="step-n">1</span><p>Tippen Sie auf einen Maler, um ihn um das Bild zu schicken.</p></li>
+      <li class="card step reveal"><span class="step-n">2</span><p>Maler malen nur ihre eigene Farbe und nur das, was sie erreichen.</p></li>
+      <li class="card step reveal"><span class="step-n">3</span><p>Maler mit Farbe im Topf warten auf der Bank, also lassen Sie sie nicht voll werden.</p></li>
+      <li class="card step reveal"><span class="step-n">4</span><p>Beenden Sie das Bild, um es in Ihrer Galerie zu rahmen und bis zu drei Sterne zu verdienen.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec alt" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="sec-head solo reveal"><h2 id="features-title">Funktionen</h2></div>
+    <div class="cards">
+      <div class="card reveal"><h3>100 Bilder, 10 Ateliers</h3><p>Herzen, Kätzchen, Cupcakes, Wale, Raketen und vieles mehr, alle auf Lösbarkeit geprüft.</p></div>
+      <div class="card reveal"><h3>Ihre Galerie</h3><p>Jedes fertige Bild wird gerahmt, und Sie können es für eine perfekte Wertung wiederholen.</p></div>
+      <div class="card reveal"><h3>Jeden Tag Belohnungen</h3><p>Jeden Tag ein Gratisgeschenk, eine Sternentruhe zum Füllen und ein neues Tagesbild zum Malen.</p></div>
+      <div class="card reveal"><h3>Überraschend tiefgründig</h3><p>Leicht zu lernen, mit viel zu planen. Spulen Sie vor, wenn Ihr Plan steht.</p></div>
+      <div class="card reveal"><h3>Goldener Maler</h3><p>Finden Sie den goldenen Maler für einen Gratishinweis.</p></div>
+      <div class="card reveal"><h3>Für alle gemacht</h3><p>Farbenblind-freundliche Symbole, eine Option für weniger Bewegung und flüssiges Spielen auf älteren Handys.</p></div>
     </div>
   </div>
 </section>
 
-<section class="detail-section detail-facts" aria-labelledby="facts-title">
-  <div class="wrap">
-    <div class="head"><h2 id="facts-title">Auf einen Blick</h2></div>
-    <dl class="facts">
-      <div><dt>Genre</dt><dd>Pixel-Art-Rätsel</dd></div>
-      <div><dt>Inhalt</dt><dd>100 Bilder in 10 Ateliers</dd></div>
-      <div><dt>Plattformen</dt><dd>Android und iOS (bald verfügbar)</dd></div>
-      <div><dt>Preis</dt><dd>Kostenlos spielbar, mit Werbung und optionalen Käufen</dd></div>
-      <div><dt>Funktioniert offline</dt><dd>Ja</dd></div>
-      <div><dt>Sprache</dt><dd>Englisch</dd></div>
-      <div><dt>Entwickler</dt><dd>Acute By</dd></div>
-    </dl>
-    <div class="head detail-more"><h2>Mehr von Acute By</h2></div>
-    <ul class="feats more-list"><li><a href="/de/jarlings/">Jarlings: Sort Puzzle</a></li><li><a href="/de/mahjong-sunroom/">Mahjong Sunroom: Big Tiles</a></li><li><a href="/de/one-touch-survivor/">One Touch Survivor</a></li><li><a href="/de/chrono-detective/">Chrono Detective</a></li><li><a href="/de/file-icu-app/">File ICU App</a></li><li><a href="/de/health-icu-app/">Health ICU App</a></li></ul>
-    <a class="back" href="/de/games.html">&larr; Alle Spiele</a>
+<section class="sec" aria-labelledby="facts-title">
+  <div class="wrap glance">
+    <div class="reveal">
+      <h2 id="facts-title">Auf einen Blick</h2>
+      <dl class="facts">
+        <div><dt>Genre</dt><dd>Pixel-Art-Rätsel</dd></div>
+        <div><dt>Inhalt</dt><dd>100 Bilder in 10 Ateliers</dd></div>
+        <div><dt>Plattformen</dt><dd>Android und iOS (bald verfügbar)</dd></div>
+        <div><dt>Preis</dt><dd>Kostenlos spielbar, mit Werbung und optionalen Käufen</dd></div>
+        <div><dt>Funktioniert offline</dt><dd>Ja</dd></div>
+        <div><dt>Sprache</dt><dd>Englisch</dd></div>
+        <div><dt>Entwickler</dt><dd>Acute By</dd></div>
+      </dl>
+    </div>
+    <div class="reveal">
+      <h2>Mehr von Acute By</h2>
+      <ul class="more">
+      <li><a href="/de/jarlings/"><img src="/assets/games/jarlings-icon.webp" alt="" width="46" height="46"><span><b>Jarlings: Sort Puzzle</b><small>Gemütliches Farbsortierspiel</small></span></a></li>
+      <li><a href="/de/mahjong-sunroom/"><img src="/assets/games/mahjong-icon.webp" alt="" width="46" height="46"><span><b>Mahjong Sunroom: Big Tiles</b><small>Mahjong-Solitär mit großen Steinen</small></span></a></li>
+      <li><a href="/de/one-touch-survivor/"><img src="/assets/games/survivor-icon.webp" alt="" width="46" height="46"><span><b>One Touch Survivor</b><small>Arena-Survival mit einem Finger</small></span></a></li>
+      <li><a href="/de/chrono-detective/"><img src="/assets/games/chrono-icon.webp" alt="" width="46" height="46"><span><b>Chrono Detective</b><small>Gemütliches Zeitreise-Rätsel</small></span></a></li>
+      <li><a href="/de/file-icu-app/"><span class="logo"><img src="/assets/sites/file-icu.svg" alt="" width="32" height="32"></span><span><b>File ICU App</b><small>PDF-, Bild- und Textwerkzeuge, die offline funktionieren</small></span></a></li>
+      <li><a href="/de/health-icu-app/"><span class="logo"><img src="/assets/sites/health-icu.svg" alt="" width="32" height="32"></span><span><b>Health ICU App</b><small>Gesundheitsrechner, die offline funktionieren</small></span></a></li>
+      </ul>
+      <a class="back" href="/de/games.html">&larr; Alle Spiele</a>
+    </div>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="/de/" aria-label="Startseite von Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34"><b>Acute <span>By</span></b></a>
-    <nav aria-label="Fußzeile">
-      <a href="/de/games.html">Spiele</a>
-      <a href="/de/websites.html">Websites</a>
-      <a href="/de/about.html">Über uns</a>
-      <a href="/de/privacy.html">Datenschutzerklärungen</a>
-      <a href="/de/terms.html">Nutzungsbedingungen</a>
-      <a href="/de/about.html#contact">Kontakt</a>
-    </nav>
-    <small>&copy; <span id="year">2026</span> Acute By. Mit Sorgfalt gemacht.</small>
+    <div class="foot-top">
+      <div class="foot-about">
+        <a class="brand" href="/de/" aria-label="Startseite von Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
+        <p>Ein unabhängiges Studio für gemütliche Mobile-Spiele und kostenlose Websites für den Alltag.</p>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Spiele</p>
+        <ul>
+          <li><a href="/de/jarlings/">Jarlings</a></li>
+          <li><a href="/de/mahjong-sunroom/">Mahjong Sunroom</a></li>
+          <li><a href="/de/paint-parade/">Paint Parade</a></li>
+          <li><a href="/de/one-touch-survivor/">One Touch Survivor</a></li>
+          <li><a href="/de/chrono-detective/">Chrono Detective</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Websites</p>
+        <ul>
+          <li><a href="https://www.fileicu.com/de/" target="_blank" rel="noopener">File ICU</a></li>
+          <li><a href="https://www.health-icu.com/de/" target="_blank" rel="noopener">Health ICU</a></li>
+          <li><a href="/de/file-icu-app/">File ICU App</a></li>
+          <li><a href="/de/health-icu-app/">Health ICU App</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Studio</p>
+        <ul>
+          <li><a href="/de/about.html">Über uns</a></li>
+          <li><a href="/de/games.html">Spiele</a></li>
+          <li><a href="/de/websites.html">Websites</a></li>
+          <li><a href="/de/contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <small>&copy; <span id="year">2026</span> Acute By. Mit Sorgfalt gemacht.</small>
+      <nav aria-label="Fußzeile">
+        <a href="/de/privacy.html">Datenschutzerklärungen</a>
+        <a href="/de/terms.html">Nutzungsbedingungen</a>
+      </nav>
+    </div>
   </div>
 </footer>
 </body>

@@ -18,7 +18,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#170C2B">
+<meta name="theme-color" content="#FFF1E6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Acute By">
 <meta property="og:title" content="Jeux Acute By : jeux mobiles cosy pour Android et iOS">
@@ -81,9 +81,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Noto+Sans+Arabic:wght@400;600;800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
-<script>document.documentElement.className+=' js'</script>
+<script>(function(d){d.className+=' js';try{var t=localStorage.getItem('acute_theme');if(t)d.setAttribute('data-theme',t)}catch(e){}})(document.documentElement)</script>
 <script src="/assets/site.js" defer></script>
 <script src="/assets/consent.js" defer></script>
 </head>
@@ -92,158 +92,142 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="/fr/" aria-label="Accueil Acute By"><img src="/assets/logo.svg" alt="" width="38" height="38"><b>Acute <span>By</span></b></a>
+    <a class="brand" href="/fr/" aria-label="Accueil Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
     <ul>
       <li><a class="active" href="/fr/games.html">Jeux</a></li>
       <li><a href="/fr/websites.html">Sites web</a></li>
       <li><a href="/fr/about.html">À propos</a></li>
-      <li><a class="cta" href="/fr/about.html#contact">Contact</a></li>
+      <li><a class="cta" href="/fr/contact.html">Contact</a></li>
     </ul>
   </div>
 </header>
 
 <main>
 <div class="phero">
-  <span class="blob b1"></span><span class="blob b2"></span>
   <div class="wrap">
-    <img class="app" src="/assets/logo.svg" alt="Logo Acute By" width="88" height="88">
     <div>
+      <span class="eyebrow">Nos jeux</span>
       <h1>Nos jeux <span class="grad">mobiles</span></h1>
       <div class="meta">Des jeux cosy, légers et jouables hors ligne pour Android et iOS</div>
     </div>
   </div>
 </div>
 
-<section id="games-list" aria-label="Notre collection de jeux">
+<section class="sec tight" id="games-list" aria-label="Notre collection de jeux">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Nos jeux</span>
-      <h2>Des jeux cosy <span class="grad">auxquels on revient</span></h2>
-      <p>Rapides à apprendre, satisfaisants à maîtriser, parfaits pour une pause de cinq minutes ou une longue soirée au calme.</p>
+    <div class="panel-list">
+        <article class="panel jar reveal" id="jarlings">
+          <div class="copy">
+            <div class="pid"><img src="/assets/games/jarlings-icon.webp" alt="Icône de l'application Jarlings" width="56" height="56"><span class="genre">Puzzle de tri · 100 niveaux · 10 mondes</span></div>
+            <h2 id="jar-title">Jarlings: Sort Puzzle</h2>
+            <p class="desc">Triez les Jarlings en gelée dans leurs bocaux et écoutez chaque bocal plein chanter. Chaque niveau est un peu plus difficile que le précédent, avec un coffre au trésor tous les dix niveaux.</p>
+            <ul class="chips"><li>Difficulté progressive</li><li>Adapté aux daltoniens</li><li>Jarlings mystère</li><li>Cadeaux quotidiens</li></ul>
+            <div class="foot"><span class="status"><i></i>Bientôt sur Android et iOS</span><a href="/fr/jarlings/">Tous les détails &rarr;</a><a href="/fr/privacy.html#jarlings">Politique de confidentialité &rarr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/jarlings-2.webp" alt="Carte de Jarlings avec dix mondes à thème" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/jarlings-3.webp" alt="Coffre au trésor de Jarlings tous les dix niveaux" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/jarlings-1.webp" alt="Partie de Jarlings : tri des Jarlings en gelée dans des bocaux" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel mah flip reveal" id="mahjong-sunroom">
+          <div class="copy">
+            <div class="pid"><img src="/assets/games/mahjong-icon.webp" alt="Icône de l'application Mahjong Sunroom" width="56" height="56"><span class="genre">Mahjong solitaire · 100 plateaux · 10 jardins</span></div>
+            <h2 id="mah-title">Mahjong Sunroom: Big Tiles</h2>
+            <p class="desc">Un mahjong solitaire relaxant avec de grandes tuiles faciles à lire et des chiffres dans les coins. Parcourez un chemin de 100 plateaux, gagnez des étoiles et faites pousser une nouvelle plante dans votre véranda à chaque victoire.</p>
+            <ul class="chips"><li>Tuiles extra-larges</li><li>Chaque plateau a une solution</li><li>Indices discrets</li><li>Une véranda à faire pousser</li></ul>
+            <div class="foot"><span class="status"><i></i>Bientôt sur Android et iOS</span><a href="/fr/mahjong-sunroom/">Tous les détails &rarr;</a><a href="/fr/privacy.html#mahjong-sunroom">Politique de confidentialité &rarr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/mahjong-2.webp" alt="Chemin de Mahjong Sunroom à travers dix jardins" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/mahjong-3.webp" alt="Plateau de Mahjong Sunroom terminé avec trois étoiles" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/mahjong-1.webp" alt="Plateau de Mahjong Sunroom avec de grandes tuiles bien lisibles" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel pp reveal" id="paint-parade">
+          <div class="copy">
+            <div class="pid"><img src="/assets/games/paint-icon.webp" alt="Icône de l'application Paint Parade" width="56" height="56"><span class="genre">Puzzle de pixel art · 100 images · 10 ateliers</span></div>
+            <h2 id="pp-title">Paint Parade: Pixel Puzzle</h2>
+            <p class="desc">Envoyez de joyeux pots de peinture sur le tapis et regardez une image en pixels apparaître, éclaboussure après éclaboussure. Chaque image terminée est encadrée dans votre galerie.</p>
+            <ul class="chips"><li>Peindre pour révéler</li><li>Chaque niveau a une solution</li><li>Une galerie à compléter</li><li>Symboles pour daltoniens</li></ul>
+            <div class="foot"><span class="status"><i></i>Bientôt sur Android et iOS</span><a href="/fr/paint-parade/">Tous les détails &rarr;</a><a href="/fr/privacy.html#paint-parade">Politique de confidentialité &rarr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/paint-2.webp" alt="Parcours de Paint Parade à travers dix ateliers" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/paint-3.webp" alt="Chef-d'œuvre de Paint Parade avec trois étoiles" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/paint-1.webp" alt="Partie de Paint Parade : les peintres éclaboussent un poisson en pixels" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel ots flip reveal" id="one-touch-survivor">
+          <div class="copy">
+            <div class="pid"><img src="/assets/games/survivor-icon.webp" alt="Icône de l'application One Touch Survivor" width="56" height="56"><span class="genre">Action en arène · 10 vagues · 2 boss · Mode infini</span></div>
+            <h2 id="ots-title">One Touch Survivor</h2>
+            <p class="desc">Tenez bon avec un seul doigt. Tournez votre bouclier lumineux pour bloquer tout ce qui arrive, réussissez un blocage parfait pour le renvoyer aussitôt et choisissez un nouveau pouvoir après chaque vague.</p>
+            <ul class="chips"><li>Commandes à un doigt</li><li>Trois héros</li><li>Un nouveau style à chaque partie</li><li>Défi quotidien</li></ul>
+            <div class="foot"><span class="status"><i></i>Bientôt sur Android et iOS</span><a href="/fr/one-touch-survivor/">Tous les détails &rarr;</a><a href="/fr/privacy.html#one-touch-survivor">Politique de confidentialité &rarr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/survivor-1.webp" alt="Écran d'accueil de One Touch Survivor avec trois héros au choix" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/survivor-3.webp" alt="Choix d'une amélioration dans One Touch Survivor après une vague" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/survivor-2.webp" alt="Partie de One Touch Survivor : un blocage parfait contre le boss Warden Prime" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel cd reveal" id="chrono-detective">
+          <div class="copy">
+            <div class="pid"><img src="/assets/games/chrono-icon.webp" alt="Icône de l'application Chrono Detective" width="56" height="56"><span class="genre">Énigmes temporelles · 30 enquêtes · Une nouvelle scène à chaque fois</span></div>
+            <h2 id="cd-title">Chrono Detective</h2>
+            <p class="desc">Le crime a déjà eu lieu. Rembobinez la matinée, changez un petit détail (verrouiller une porte, faire sonner un téléphone, éteindre les lumières) et rejouez-la jusqu'à prendre le voleur la main dans le sac.</p>
+            <ul class="chips"><li>Rembobiner et rejouer</li><li>Banques, musées, bijouteries, casinos</li><li>Des indices si vous êtes bloqué</li><li>Jouable hors ligne</li></ul>
+            <div class="foot"><span class="status"><i></i>Bientôt sur Android et iOS</span><a href="/fr/chrono-detective/">Tous les détails &rarr;</a><a href="/fr/privacy.html#chrono-detective">Politique de confidentialité &rarr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/chrono-1.webp" alt="Tableau des enquêtes de Chrono Detective avec des affaires d'entraînement épinglées sur du liège" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/chrono-3.webp" alt="Chrono Detective : affaire classée avec trois étoiles" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/chrono-2.webp" alt="Chrono Detective : enquête sur le vol d'un musée sur la ligne du temps" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
     </div>
-
-    <article class="game jar reveal" id="jarlings" aria-labelledby="jar-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/jarlings-icon.webp" alt="Icône de l'application Jarlings" width="84" height="84">
-          <div><h3 id="jar-title">Jarlings: Sort Puzzle</h3><div class="genre">Puzzle de tri · 100 niveaux · 10 mondes</div></div>
-        </div>
-        <p class="desc">Triez les Jarlings en gelée dans leurs bocaux et écoutez chaque bocal plein chanter. Chaque niveau est un peu plus difficile que le précédent, avec un coffre au trésor tous les dix niveaux.</p>
-        <ul class="feats">
-          <li>Difficulté progressive</li><li>Adapté aux daltoniens</li><li>Jarlings mystère</li><li>Cadeaux quotidiens</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Bientôt sur Android et iOS</span>
-          <a class="link" href="/fr/jarlings/">Tous les détails &rarr;</a>
-          <a class="link" href="/fr/privacy.html#jarlings">Politique de confidentialité &rarr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/jarlings-2.webp" alt="Carte de Jarlings avec dix mondes à thème" width="360" height="730" loading="lazy">
-        <img src="/assets/games/jarlings-1.webp" alt="Partie de Jarlings : tri des Jarlings en gelée dans des bocaux" width="360" height="730" loading="lazy">
-        <img src="/assets/games/jarlings-3.webp" alt="Coffre au trésor de Jarlings tous les dix niveaux" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <article class="game mah reveal" id="mahjong-sunroom" aria-labelledby="mah-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/mahjong-icon.webp" alt="Icône de l'application Mahjong Sunroom" width="84" height="84">
-          <div><h3 id="mah-title">Mahjong Sunroom: Big Tiles</h3><div class="genre">Mahjong solitaire · 100 plateaux · 10 jardins</div></div>
-        </div>
-        <p class="desc">Un mahjong solitaire relaxant avec de grandes tuiles faciles à lire et des chiffres dans les coins. Parcourez un chemin de 100 plateaux, gagnez des étoiles et faites pousser une nouvelle plante dans votre véranda à chaque victoire.</p>
-        <ul class="feats">
-          <li>Tuiles extra-larges</li><li>Chaque plateau a une solution</li><li>Indices discrets</li><li>Une véranda à faire pousser</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Bientôt sur Android et iOS</span>
-          <a class="link" href="/fr/mahjong-sunroom/">Tous les détails &rarr;</a>
-          <a class="link" href="/fr/privacy.html#mahjong-sunroom">Politique de confidentialité &rarr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/mahjong-2.webp" alt="Chemin de Mahjong Sunroom à travers dix jardins" width="360" height="730" loading="lazy">
-        <img src="/assets/games/mahjong-1.webp" alt="Plateau de Mahjong Sunroom avec de grandes tuiles bien lisibles" width="360" height="730" loading="lazy">
-        <img src="/assets/games/mahjong-3.webp" alt="Plateau de Mahjong Sunroom terminé avec trois étoiles" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <article class="game pp reveal" id="paint-parade" aria-labelledby="pp-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/paint-icon.webp" alt="Icône de l'application Paint Parade" width="84" height="84">
-          <div><h3 id="pp-title">Paint Parade: Pixel Puzzle</h3><div class="genre">Puzzle de pixel art · 100 images · 10 ateliers</div></div>
-        </div>
-        <p class="desc">Envoyez de joyeux pots de peinture sur le tapis et regardez une image en pixels apparaître, éclaboussure après éclaboussure. Chaque image terminée est encadrée dans votre galerie.</p>
-        <ul class="feats">
-          <li>Peindre pour révéler</li><li>Chaque niveau a une solution</li><li>Une galerie à compléter</li><li>Symboles pour daltoniens</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Bientôt sur Android et iOS</span>
-          <a class="link" href="/fr/paint-parade/">Tous les détails &rarr;</a>
-          <a class="link" href="/fr/privacy.html#paint-parade">Politique de confidentialité &rarr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/paint-2.webp" alt="Parcours de Paint Parade à travers dix ateliers" width="360" height="730" loading="lazy">
-        <img src="/assets/games/paint-1.webp" alt="Partie de Paint Parade : les peintres éclaboussent un poisson en pixels" width="360" height="730" loading="lazy">
-        <img src="/assets/games/paint-3.webp" alt="Chef-d'œuvre de Paint Parade avec trois étoiles" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <article class="game ots reveal" id="one-touch-survivor" aria-labelledby="ots-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/survivor-icon.webp" alt="Icône de l'application One Touch Survivor" width="84" height="84">
-          <div><h3 id="ots-title">One Touch Survivor</h3><div class="genre">Action en arène · 10 vagues · 2 boss · Mode infini</div></div>
-        </div>
-        <p class="desc">Tenez bon avec un seul doigt. Tournez votre bouclier lumineux pour bloquer tout ce qui arrive, réussissez un blocage parfait pour le renvoyer aussitôt et choisissez un nouveau pouvoir après chaque vague.</p>
-        <ul class="feats">
-          <li>Commandes à un doigt</li><li>Trois héros</li><li>Un nouveau style à chaque partie</li><li>Défi quotidien</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Bientôt sur Android et iOS</span>
-          <a class="link" href="/fr/one-touch-survivor/">Tous les détails &rarr;</a>
-          <a class="link" href="/fr/privacy.html#one-touch-survivor">Politique de confidentialité &rarr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/survivor-1.webp" alt="Écran d'accueil de One Touch Survivor avec trois héros au choix" width="360" height="730" loading="lazy">
-        <img src="/assets/games/survivor-2.webp" alt="Partie de One Touch Survivor : un blocage parfait contre le boss Warden Prime" width="360" height="730" loading="lazy">
-        <img src="/assets/games/survivor-3.webp" alt="Choix d'une amélioration dans One Touch Survivor après une vague" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <article class="game cd reveal" id="chrono-detective" aria-labelledby="cd-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/chrono-icon.webp" alt="Icône de l'application Chrono Detective" width="84" height="84">
-          <div><h3 id="cd-title">Chrono Detective</h3><div class="genre">Énigmes temporelles · 30 enquêtes · Une nouvelle scène à chaque fois</div></div>
-        </div>
-        <p class="desc">Le crime a déjà eu lieu. Rembobinez la matinée, changez un petit détail (verrouiller une porte, faire sonner un téléphone, éteindre les lumières) et rejouez-la jusqu'à prendre le voleur la main dans le sac.</p>
-        <ul class="feats">
-          <li>Rembobiner et rejouer</li><li>Banques, musées, bijouteries, casinos</li><li>Des indices si vous êtes bloqué</li><li>Jouable hors ligne</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>Bientôt sur Android et iOS</span>
-          <a class="link" href="/fr/chrono-detective/">Tous les détails &rarr;</a>
-          <a class="link" href="/fr/privacy.html#chrono-detective">Politique de confidentialité &rarr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/chrono-1.webp" alt="Tableau des enquêtes de Chrono Detective avec des affaires d'entraînement épinglées sur du liège" width="360" height="730" loading="lazy">
-        <img src="/assets/games/chrono-2.webp" alt="Chrono Detective : enquête sur le vol d'un musée sur la ligne du temps" width="360" height="730" loading="lazy">
-        <img src="/assets/games/chrono-3.webp" alt="Chrono Detective : affaire classée avec trois étoiles" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
     <div class="soon reveal">
       <div class="bubbles" aria-hidden="true"><span>&#x2726;</span><span>?</span><span>+</span></div>
       <div>
         <h3>D'autres jeux et applications en préparation</h3>
         <p>Les nouvelles idées ne manquent jamais. Envie d'en entendre parler en premier ?</p>
       </div>
-      <a class="btn btn-primary" href="/fr/about.html#contact">Tenez-moi au courant</a>
+      <a class="btn btn-primary" href="/fr/contact.html">Tenez-moi au courant</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="promise" aria-labelledby="promise-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">Notre promesse</span>
+        <h2 id="promise-title">Léger sur votre téléphone. <span class="grad">Grand par le soin.</span></h2>
+      </div>
+      <p>Chaque jeu que nous créons suit les quatre mêmes règles.</p>
+    </div>
+    <div class="pgrid">
+      <div class="pitem reveal"><span class="num">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Léger comme une plume</h3>
+        <p>Téléchargements légers, démarrages rapides et jeu fluide, même sur d'anciens téléphones.</p>
+      </div>
+      <div class="pitem reveal"><span class="num">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Privé par défaut</h3>
+        <p>Pas de compte ni d'inscription. Votre progression reste sur votre appareil.</p>
+      </div>
+      <div class="pitem reveal"><span class="num">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M3 7h18M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg></div>
+        <h3>Équitable et convivial</h3>
+        <p>Pas de minuteur d'énergie ni de pay-to-win. Là où une version contient des publicités, les vidéos restent toujours votre choix.</p>
+      </div>
+      <div class="pitem reveal"><span class="num">04</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+        <h3>Fait pour tous</h3>
+        <p>Visuels grands et clairs, repères adaptés aux daltoniens et rythme détendu.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -251,16 +235,47 @@
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="/fr/" aria-label="Accueil Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34"><b>Acute <span>By</span></b></a>
-    <nav aria-label="Pied de page">
-      <a href="/fr/games.html">Jeux</a>
-      <a href="/fr/websites.html">Sites web</a>
-      <a href="/fr/about.html">À propos</a>
-      <a href="/fr/privacy.html">Politiques de confidentialité</a>
-      <a href="/fr/terms.html">Conditions d'utilisation</a>
-      <a href="/fr/about.html#contact">Contact</a>
-    </nav>
-    <small>&copy; <span id="year">2026</span> Acute By. Fait avec soin.</small>
+    <div class="foot-top">
+      <div class="foot-about">
+        <a class="brand" href="/fr/" aria-label="Accueil Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
+        <p>Un studio indépendant qui crée des jeux mobiles cosy et des sites web gratuits pour le quotidien.</p>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Jeux</p>
+        <ul>
+          <li><a href="/fr/jarlings/">Jarlings</a></li>
+          <li><a href="/fr/mahjong-sunroom/">Mahjong Sunroom</a></li>
+          <li><a href="/fr/paint-parade/">Paint Parade</a></li>
+          <li><a href="/fr/one-touch-survivor/">One Touch Survivor</a></li>
+          <li><a href="/fr/chrono-detective/">Chrono Detective</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Sites web</p>
+        <ul>
+          <li><a href="https://www.fileicu.com/fr/" target="_blank" rel="noopener">File ICU</a></li>
+          <li><a href="https://www.health-icu.com/fr/" target="_blank" rel="noopener">Health ICU</a></li>
+          <li><a href="/fr/file-icu-app/">Application File ICU</a></li>
+          <li><a href="/fr/health-icu-app/">Application Health ICU</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Studio</p>
+        <ul>
+          <li><a href="/fr/about.html">À propos</a></li>
+          <li><a href="/fr/games.html">Jeux</a></li>
+          <li><a href="/fr/websites.html">Sites web</a></li>
+          <li><a href="/fr/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <small>&copy; <span id="year">2026</span> Acute By. Fait avec soin.</small>
+      <nav aria-label="Pied de page">
+        <a href="/fr/privacy.html">Politiques de confidentialité</a>
+        <a href="/fr/terms.html">Conditions d'utilisation</a>
+      </nav>
+    </div>
   </div>
 </footer>
 </body>

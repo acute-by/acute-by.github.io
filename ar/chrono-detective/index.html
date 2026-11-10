@@ -18,7 +18,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#170C2B">
+<meta name="theme-color" content="#FFF1E6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Acute By">
 <meta property="og:title" content="لعبة Chrono Detective: ألغاز السفر عبر الزمن">
@@ -50,9 +50,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Noto+Sans+Arabic:wght@400;600;800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
-<script>document.documentElement.className+=' js'</script>
+<script>(function(d){d.className+=' js';try{var t=localStorage.getItem('acute_theme');if(t)d.setAttribute('data-theme',t)}catch(e){}})(document.documentElement)</script>
 <script src="/assets/site.js" defer></script>
 <script src="/assets/consent.js" defer></script>
 </head>
@@ -61,104 +61,135 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="/ar/" aria-label="الصفحة الرئيسية لـ Acute By"><img src="/assets/logo.svg" alt="" width="38" height="38"><b>Acute <span>By</span></b></a>
+    <a class="brand" href="/ar/" aria-label="الصفحة الرئيسية لـ Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
     <ul>
       <li><a class="active" href="/ar/games.html">الألعاب</a></li>
       <li><a href="/ar/websites.html">المواقع</a></li>
       <li><a href="/ar/about.html">من نحن</a></li>
-      <li><a class="cta" href="/ar/about.html#contact">اتصل بنا</a></li>
+      <li><a class="cta" href="/ar/contact.html">اتصل بنا</a></li>
     </ul>
   </div>
 </header>
 
 <main>
-<div class="phero">
-  <span class="blob b1"></span><span class="blob b2"></span>
+<section class="product" id="overview">
   <div class="wrap">
-    <img class="app" src="/assets/games/chrono-icon.webp" alt="أيقونة تطبيق Chrono Detective" width="88" height="88">
-    <div>
-      <h1>Chrono Detective</h1>
-      <div class="meta">لغز مريح عن السفر عبر الزمن</div>
-    </div>
-  </div>
-</div>
-
-<section class="detail-top" id="overview">
-  <div class="wrap">
-    <article class="game cd">
-      <div class="info">
+    <a class="top-back" href="/ar/games.html">&rarr; كل الألعاب</a>
+    <div class="panel cd on">
+      <div class="copy">
+        <div class="pid"><img src="/assets/games/chrono-icon.webp" alt="أيقونة تطبيق Chrono Detective" width="56" height="56"><span class="genre">لغز مريح عن السفر عبر الزمن</span></div>
+        <h1>Chrono Detective</h1>
         <p class="desc">وقعت الجريمة بالفعل. أعد الزمن الآن وأوقفها. شاهد سرقة تحدث، ثم اسحب الخط الزمني إلى الوراء وغيّر شيئًا صغيرًا حتى يُقبض على اللص متلبسًا.</p>
-        <div class="row">
-          <span class="status"><span class="dot"></span>قريبًا على Android وiOS</span>
-          <a class="link" href="/ar/privacy.html#chrono-detective">سياسة الخصوصية &larr;</a>
-        </div>
+        <div class="foot"><span class="status"><i></i>قريبًا على Android وiOS</span><a href="/ar/privacy.html#chrono-detective">سياسة الخصوصية &larr;</a></div>
       </div>
       <div class="shots">
-        <img src="/assets/games/chrono-1.webp" alt="لوحة القضايا في Chrono Detective مع قضايا تدريبية مثبتة على لوح فلين" width="360" height="730" loading="lazy">
-        <img src="/assets/games/chrono-2.webp" alt="التحقيق في سرقة متحف على الخط الزمني في Chrono Detective" width="360" height="730" loading="lazy">
-        <img src="/assets/games/chrono-3.webp" alt="قضية مغلقة بثلاث نجوم في Chrono Detective" width="360" height="730" loading="lazy">
+        <div class="phone p2"><img src="/assets/games/chrono-1.webp" alt="لوحة القضايا في Chrono Detective مع قضايا تدريبية مثبتة على لوح فلين" width="360" height="730" loading="lazy"></div>
+        <div class="phone p3"><img src="/assets/games/chrono-3.webp" alt="قضية مغلقة بثلاث نجوم في Chrono Detective" width="360" height="730" loading="lazy"></div>
+        <div class="phone p1"><img src="/assets/games/chrono-2.webp" alt="التحقيق في سرقة متحف على الخط الزمني في Chrono Detective" width="360" height="730" loading="lazy"></div>
       </div>
-    </article>
-  </div>
-</section>
-
-<section class="values detail-section" aria-labelledby="how-title">
-  <div class="wrap">
-    <div class="head"><h2 id="how-title">طريقة اللعب</h2></div>
-    <div class="grid4">
-      <div class="card"><div class="ic step">1</div><p>شاهد الجريمة وهي تحدث.</p></div>
-      <div class="card"><div class="ic step">2</div><p>اسحب الخط الزمني إلى أي لحظة. يكرر الجميع ما فعلوه تمامًا حتى تغيّر شيئًا.</p></div>
-      <div class="card"><div class="ic step">3</div><p>غيّر شيئًا صغيرًا: أغلق بابًا، أو شغّل رنين هاتف، أو أطفئ الأنوار.</p></div>
-      <div class="card"><div class="ic step">4</div><p>أعد المشهد وأمسك اللص ومعه الغنيمة أو داخل الخزنة.</p></div>
     </div>
   </div>
 </section>
 
-<section class="detail-section" aria-labelledby="features-title">
+<section class="sec" aria-labelledby="how-title">
   <div class="wrap">
-    <div class="head"><h2 id="features-title">المزايا</h2></div>
-    <div class="grid3">
-      <div class="card"><h3>ثلاثون قضية</h3><p>عشر قضايا تدريبية في First Chrono Bank، ثم 20 ملفًا في البنوك والمتاحف ومحال المجوهرات والكازينوهات.</p></div>
-      <div class="card"><h3>مشهد جديد في كل مرة</h3><p>كل محاولة تبني مسرح جريمة جديدًا، ويُتحقق من أن كلًا منها قابل للحل.</p></div>
-      <div class="card"><h3>فكّر كمحقق</h3><p>يرى الحراس الغرفة المضاءة كلها، وفي الظلام ما بجوارهم فقط. وينتظر اللصوص حتى لا يراقب أحد.</p></div>
-      <div class="card"><h3>اكسب شارتك</h3><p>حتى ثلاث نجوم لكل قضية، من مبتدئ إلى رئيس.</p></div>
-      <div class="card"><h3>تلميحات عندما تتعثر</h3><p>تُظهر التلميحات أي شيء مهم، ثم متى تتصرف.</p></div>
-      <div class="card"><h3>مصنوعة بعناية</h3><p>شخصيات جذابة وموسيقى نوار غامضة وأصوات ممتعة.</p></div>
+    <div class="sec-head solo reveal"><h2 id="how-title">طريقة اللعب</h2></div>
+    <ol class="cards four">
+      <li class="card step reveal"><span class="step-n">1</span><p>شاهد الجريمة وهي تحدث.</p></li>
+      <li class="card step reveal"><span class="step-n">2</span><p>اسحب الخط الزمني إلى أي لحظة. يكرر الجميع ما فعلوه تمامًا حتى تغيّر شيئًا.</p></li>
+      <li class="card step reveal"><span class="step-n">3</span><p>غيّر شيئًا صغيرًا: أغلق بابًا، أو شغّل رنين هاتف، أو أطفئ الأنوار.</p></li>
+      <li class="card step reveal"><span class="step-n">4</span><p>أعد المشهد وأمسك اللص ومعه الغنيمة أو داخل الخزنة.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec alt" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="sec-head solo reveal"><h2 id="features-title">المزايا</h2></div>
+    <div class="cards">
+      <div class="card reveal"><h3>ثلاثون قضية</h3><p>عشر قضايا تدريبية في First Chrono Bank، ثم 20 ملفًا في البنوك والمتاحف ومحال المجوهرات والكازينوهات.</p></div>
+      <div class="card reveal"><h3>مشهد جديد في كل مرة</h3><p>كل محاولة تبني مسرح جريمة جديدًا، ويُتحقق من أن كلًا منها قابل للحل.</p></div>
+      <div class="card reveal"><h3>فكّر كمحقق</h3><p>يرى الحراس الغرفة المضاءة كلها، وفي الظلام ما بجوارهم فقط. وينتظر اللصوص حتى لا يراقب أحد.</p></div>
+      <div class="card reveal"><h3>اكسب شارتك</h3><p>حتى ثلاث نجوم لكل قضية، من مبتدئ إلى رئيس.</p></div>
+      <div class="card reveal"><h3>تلميحات عندما تتعثر</h3><p>تُظهر التلميحات أي شيء مهم، ثم متى تتصرف.</p></div>
+      <div class="card reveal"><h3>مصنوعة بعناية</h3><p>شخصيات جذابة وموسيقى نوار غامضة وأصوات ممتعة.</p></div>
     </div>
   </div>
 </section>
 
-<section class="detail-section detail-facts" aria-labelledby="facts-title">
-  <div class="wrap">
-    <div class="head"><h2 id="facts-title">لمحة سريعة</h2></div>
-    <dl class="facts">
-      <div><dt>النوع</dt><dd>لغز السفر عبر الزمن</dd></div>
-      <div><dt>المحتوى</dt><dd>ثلاثون قضية مع مشهد جديد في كل محاولة</dd></div>
-      <div><dt>المنصات</dt><dd>Android وiOS (قريبًا)</dd></div>
-      <div><dt>السعر</dt><dd>مجانية مع إعلانات ومشتريات اختيارية</dd></div>
-      <div><dt>يعمل دون إنترنت</dt><dd>نعم</dd></div>
-      <div><dt>اللغة</dt><dd>الإنجليزية</dd></div>
-      <div><dt>المطوّر</dt><dd>Acute By</dd></div>
-    </dl>
-    <div class="head detail-more"><h2>المزيد من Acute By</h2></div>
-    <ul class="feats more-list"><li><a href="/ar/jarlings/">Jarlings: Sort Puzzle</a></li><li><a href="/ar/mahjong-sunroom/">Mahjong Sunroom: Big Tiles</a></li><li><a href="/ar/paint-parade/">Paint Parade: Pixel Puzzle</a></li><li><a href="/ar/one-touch-survivor/">One Touch Survivor</a></li><li><a href="/ar/file-icu-app/">تطبيق File ICU</a></li><li><a href="/ar/health-icu-app/">تطبيق Health ICU</a></li></ul>
-    <a class="back" href="/ar/games.html">&rarr; كل الألعاب</a>
+<section class="sec" aria-labelledby="facts-title">
+  <div class="wrap glance">
+    <div class="reveal">
+      <h2 id="facts-title">لمحة سريعة</h2>
+      <dl class="facts">
+        <div><dt>النوع</dt><dd>لغز السفر عبر الزمن</dd></div>
+        <div><dt>المحتوى</dt><dd>ثلاثون قضية مع مشهد جديد في كل محاولة</dd></div>
+        <div><dt>المنصات</dt><dd>Android وiOS (قريبًا)</dd></div>
+        <div><dt>السعر</dt><dd>مجانية مع إعلانات ومشتريات اختيارية</dd></div>
+        <div><dt>يعمل دون إنترنت</dt><dd>نعم</dd></div>
+        <div><dt>اللغة</dt><dd>الإنجليزية</dd></div>
+        <div><dt>المطوّر</dt><dd>Acute By</dd></div>
+      </dl>
+    </div>
+    <div class="reveal">
+      <h2>المزيد من Acute By</h2>
+      <ul class="more">
+      <li><a href="/ar/jarlings/"><img src="/assets/games/jarlings-icon.webp" alt="" width="46" height="46"><span><b>Jarlings: Sort Puzzle</b><small>لعبة فرز ألوان مريحة</small></span></a></li>
+      <li><a href="/ar/mahjong-sunroom/"><img src="/assets/games/mahjong-icon.webp" alt="" width="46" height="46"><span><b>Mahjong Sunroom: Big Tiles</b><small>ماهجونغ سوليتير بقطع كبيرة</small></span></a></li>
+      <li><a href="/ar/paint-parade/"><img src="/assets/games/paint-icon.webp" alt="" width="46" height="46"><span><b>Paint Parade: Pixel Puzzle</b><small>لغز فن البكسل على الحزام</small></span></a></li>
+      <li><a href="/ar/one-touch-survivor/"><img src="/assets/games/survivor-icon.webp" alt="" width="46" height="46"><span><b>One Touch Survivor</b><small>بقاء في الساحة بإصبع واحدة</small></span></a></li>
+      <li><a href="/ar/file-icu-app/"><span class="logo"><img src="/assets/sites/file-icu.svg" alt="" width="32" height="32"></span><span><b>تطبيق File ICU</b><small>أدوات PDF والصور والنصوص تعمل دون إنترنت</small></span></a></li>
+      <li><a href="/ar/health-icu-app/"><span class="logo"><img src="/assets/sites/health-icu.svg" alt="" width="32" height="32"></span><span><b>تطبيق Health ICU</b><small>حاسبات صحية تعمل دون إنترنت</small></span></a></li>
+      </ul>
+      <a class="back" href="/ar/games.html">&rarr; كل الألعاب</a>
+    </div>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="/ar/" aria-label="الصفحة الرئيسية لـ Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34"><b>Acute <span>By</span></b></a>
-    <nav aria-label="تذييل الصفحة">
-      <a href="/ar/games.html">الألعاب</a>
-      <a href="/ar/websites.html">المواقع</a>
-      <a href="/ar/about.html">من نحن</a>
-      <a href="/ar/privacy.html">سياسات الخصوصية</a>
-      <a href="/ar/terms.html">شروط الاستخدام</a>
-      <a href="/ar/about.html#contact">اتصل بنا</a>
-    </nav>
-    <small>&copy; <span id="year">2026</span> Acute By. صُنع بعناية.</small>
+    <div class="foot-top">
+      <div class="foot-about">
+        <a class="brand" href="/ar/" aria-label="الصفحة الرئيسية لـ Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
+        <p>استوديو مستقل يصنع ألعاب هاتف مريحة ومواقع مجانية للمهام اليومية.</p>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">الألعاب</p>
+        <ul>
+          <li><a href="/ar/jarlings/">Jarlings</a></li>
+          <li><a href="/ar/mahjong-sunroom/">Mahjong Sunroom</a></li>
+          <li><a href="/ar/paint-parade/">Paint Parade</a></li>
+          <li><a href="/ar/one-touch-survivor/">One Touch Survivor</a></li>
+          <li><a href="/ar/chrono-detective/">Chrono Detective</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">المواقع</p>
+        <ul>
+          <li><a href="https://www.fileicu.com/ar/" target="_blank" rel="noopener">File ICU</a></li>
+          <li><a href="https://www.health-icu.com/ar/" target="_blank" rel="noopener">Health ICU</a></li>
+          <li><a href="/ar/file-icu-app/">تطبيق File ICU</a></li>
+          <li><a href="/ar/health-icu-app/">تطبيق Health ICU</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">الاستوديو</p>
+        <ul>
+          <li><a href="/ar/about.html">من نحن</a></li>
+          <li><a href="/ar/games.html">الألعاب</a></li>
+          <li><a href="/ar/websites.html">المواقع</a></li>
+          <li><a href="/ar/contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <small>&copy; <span id="year">2026</span> Acute By. صُنع بعناية.</small>
+      <nav aria-label="تذييل الصفحة">
+        <a href="/ar/privacy.html">سياسات الخصوصية</a>
+        <a href="/ar/terms.html">شروط الاستخدام</a>
+      </nav>
+    </div>
   </div>
 </footer>
 </body>

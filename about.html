@@ -18,7 +18,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#170C2B">
+<meta name="theme-color" content="#FFF1E6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Acute By">
 <meta property="og:title" content="About Acute By: Indie Studio for Games and Websites">
@@ -57,9 +57,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Noto+Sans+Arabic:wght@400;600;800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
-<script>document.documentElement.className+=' js'</script>
+<script>(function(d){d.className+=' js';try{var t=localStorage.getItem('acute_theme');if(t)d.setAttribute('data-theme',t)}catch(e){}})(document.documentElement)</script>
 <script src="/assets/site.js" defer></script>
 <script src="/assets/consent.js" defer></script>
 </head>
@@ -68,21 +68,19 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="38" height="38"><b>Acute <span>By</span></b></a>
+    <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
     <ul>
       <li><a href="/games.html">Games</a></li>
       <li><a href="/websites.html">Websites</a></li>
       <li><a class="active" href="/about.html">About us</a></li>
-      <li><a class="cta" href="#contact">Contact</a></li>
+      <li><a class="cta" href="/contact.html">Contact</a></li>
     </ul>
   </div>
 </header>
 
 <main>
 <div class="phero">
-  <span class="blob b1"></span><span class="blob b2"></span>
   <div class="wrap">
-    <img class="app" src="/assets/logo.svg" alt="Acute By logo" width="88" height="88">
     <div>
       <h1>About <span class="grad">Acute By</span></h1>
       <div class="meta">Indie studio making cozy mobile games and free privacy-first web utilities</div>
@@ -90,55 +88,79 @@
   </div>
 </div>
 
-<section id="about-content" aria-labelledby="about-title">
+<section class="sec tight" id="about-content" aria-labelledby="about-title">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Who we are</span>
-      <h2 id="about-title">Tiny apps. <span class="grad">Big smiles.</span></h2>
-      <p>Acute By makes cozy, lightweight mobile games and free websites for everyday tasks. Both respect your time and your privacy.</p>
-    </div>
-
-    <section class="values" id="promise" aria-labelledby="promise-title" style="border-radius: var(--r-lg); padding: 50px 0; margin-bottom: 50px;">
-      <div class="wrap">
-        <div class="head reveal">
-          <span class="eyebrow">Our promise</span>
-          <h2 id="promise-title">Small on your phone. <span class="grad">Big on care.</span></h2>
-          <p>Every game and app we make follows the same four rules.</p>
-        </div>
-        <div class="grid4">
-          <div class="card reveal">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 3.8a6 6 0 0 0-8.5 0L5 10.5V19h8.5l6.7-6.7a6 6 0 0 0 0-8.5zM16 8 2 22M17.5 15H9"/></svg></div>
-            <h3>Light as a feather</h3>
-            <p>Tiny downloads, quick starts and smooth play, even on older phones.</p>
-          </div>
-          <div class="card reveal">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-            <h3>Private by default</h3>
-            <p>No accounts and no sign-ups. Your progress stays on your device.</p>
-          </div>
-          <div class="card reveal">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
-            <h3>Fair &amp; friendly</h3>
-            <p>No energy timers and no pay-to-win. Wherever a version has ads, videos are always your choice.</p>
-          </div>
-          <div class="card reveal">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M4 9l8 2 8-2M12 11v5l-3 6M12 16l3 6"/></svg></div>
-            <h3>Made for everyone</h3>
-            <p>Big, clear visuals, colour-blind friendly cues and relaxed pacing.</p>
-          </div>
-        </div>
+    <div class="story reveal">
+      <div>
+        <span class="eyebrow">Who we are</span>
+        <h2 id="about-title">Tiny apps. <span class="grad">Big smiles.</span></h2>
       </div>
-    </section>
+      <div class="text">
+        <p>Acute By makes cozy, lightweight mobile games, plus free websites and phone apps for everyday tasks. All of them respect your time and your privacy.</p>
+        <p>Acute By exists to make the kind of apps we want on our own phones: quick to open, calm to use and honest about what they do.</p>
+        <p>Our games are made for short breaks and long evenings alike, with no timers pushing you to pay. Our websites handle everyday jobs, from merging a PDF to checking your BMI, without asking you to sign up.</p>
+      </div>
+    </div>
+    <div class="cards two parts">
+      <a class="card part reveal" href="/games.html">
+        <span class="icons" aria-hidden="true"><img src="/assets/games/jarlings-icon.webp" alt="" width="52" height="52"><img src="/assets/games/mahjong-icon.webp" alt="" width="52" height="52"><img src="/assets/games/paint-icon.webp" alt="" width="52" height="52"><img src="/assets/games/survivor-icon.webp" alt="" width="52" height="52"><img src="/assets/games/chrono-icon.webp" alt="" width="52" height="52"></span>
+        <h3>Games</h3>
+        <p>Five cozy mobile games: sort, mahjong, pixel art, arena action and time puzzles.</p>
+        <span class="go">See the games &rarr;</span>
+      </a>
+      <a class="card part reveal" href="/websites.html">
+        <span class="icons" aria-hidden="true"><span class="logo"><img src="/assets/sites/file-icu.svg" alt="" width="36" height="36"></span><span class="logo"><img src="/assets/sites/health-icu.svg" alt="" width="36" height="36"></span></span>
+        <h3>Websites</h3>
+        <p>File ICU for PDFs, images and text, and Health ICU for health calculators. Free in your browser.</p>
+        <span class="go">See the websites &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
 
-    <div class="contact reveal" id="contact" aria-labelledby="contact-title">
-      <img class="mark" src="/assets/logo.svg" alt="" width="34" height="34">
-      <img class="mark l" src="/assets/logo.svg" alt="" width="240" height="240">
+<section class="sec alt" id="promise" aria-labelledby="promise-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">Our promise</span>
+        <h2 id="promise-title">Small on your phone. <span class="grad">Big on care.</span></h2>
+      </div>
+      <p>Every game and app we make follows the same four rules.</p>
+    </div>
+    <div class="pgrid">
+      <div class="pitem reveal"><span class="num">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Light as a feather</h3>
+        <p>Tiny downloads, quick starts and smooth play, even on older phones.</p>
+      </div>
+      <div class="pitem reveal"><span class="num">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Private by default</h3>
+        <p>No accounts and no sign-ups. Your progress stays on your device.</p>
+      </div>
+      <div class="pitem reveal"><span class="num">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M3 7h18M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg></div>
+        <h3>Fair &amp; friendly</h3>
+        <p>No energy timers and no pay-to-win. Wherever a version has ads, videos are always your choice.</p>
+      </div>
+      <div class="pitem reveal"><span class="num">04</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+        <h3>Made for everyone</h3>
+        <p>Big, clear visuals, colour-blind friendly cues and relaxed pacing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="cta reveal">
       <h2 id="contact-title">Say hello!</h2>
       <p>Questions, ideas, bug reports or just a kind word. We read every message.</p>
       <div class="mail">
         <code>support@fileicu.com</code>
-        <button class="btn copy" type="button" data-copy="support@fileicu.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copy</span></button>
-        <a class="btn btn-white" href="mailto:support@fileicu.com">Send email</a>
+        <button class="btn copy" type="button" data-copy="support@fileicu.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copy</span></button>
+        <a class="btn btn-white" href="mailto:support@fileicu.com">Send email<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </div>
@@ -147,16 +169,47 @@
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="34" height="34"><b>Acute <span>By</span></b></a>
-    <nav aria-label="Footer">
-      <a href="/games.html">Games</a>
-      <a href="/websites.html">Websites</a>
-      <a href="/about.html">About us</a>
-      <a href="/privacy.html">Privacy policies</a>
-      <a href="/terms.html">Terms of use</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <small>&copy; <span id="year">2026</span> Acute By. Made with care.</small>
+    <div class="foot-top">
+      <div class="foot-about">
+        <a class="brand" href="/" aria-label="Acute By home"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
+        <p>An independent studio making cozy mobile games and free everyday websites.</p>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Games</p>
+        <ul>
+          <li><a href="/jarlings/">Jarlings</a></li>
+          <li><a href="/mahjong-sunroom/">Mahjong Sunroom</a></li>
+          <li><a href="/paint-parade/">Paint Parade</a></li>
+          <li><a href="/one-touch-survivor/">One Touch Survivor</a></li>
+          <li><a href="/chrono-detective/">Chrono Detective</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Websites</p>
+        <ul>
+          <li><a href="https://www.fileicu.com/" target="_blank" rel="noopener">File ICU</a></li>
+          <li><a href="https://www.health-icu.com/" target="_blank" rel="noopener">Health ICU</a></li>
+          <li><a href="/file-icu-app/">File ICU App</a></li>
+          <li><a href="/health-icu-app/">Health ICU App</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Studio</p>
+        <ul>
+          <li><a href="/about.html">About us</a></li>
+          <li><a href="/games.html">Games</a></li>
+          <li><a href="/websites.html">Websites</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <small>&copy; <span id="year">2026</span> Acute By. Made with care.</small>
+      <nav aria-label="Footer">
+        <a href="/privacy.html">Privacy policies</a>
+        <a href="/terms.html">Terms of use</a>
+      </nav>
+    </div>
   </div>
 </footer>
 </body>

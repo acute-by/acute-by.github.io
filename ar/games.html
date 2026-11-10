@@ -18,7 +18,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#170C2B">
+<meta name="theme-color" content="#FFF1E6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Acute By">
 <meta property="og:title" content="ألعاب Acute By: ألعاب هاتف مريحة لنظامي Android وiOS">
@@ -81,9 +81,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Noto+Sans+Arabic:wght@400;600;800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
-<script>document.documentElement.className+=' js'</script>
+<script>(function(d){d.className+=' js';try{var t=localStorage.getItem('acute_theme');if(t)d.setAttribute('data-theme',t)}catch(e){}})(document.documentElement)</script>
 <script src="/assets/site.js" defer></script>
 <script src="/assets/consent.js" defer></script>
 </head>
@@ -92,158 +92,142 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="/ar/" aria-label="الصفحة الرئيسية لـ Acute By"><img src="/assets/logo.svg" alt="" width="38" height="38"><b>Acute <span>By</span></b></a>
+    <a class="brand" href="/ar/" aria-label="الصفحة الرئيسية لـ Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
     <ul>
       <li><a class="active" href="/ar/games.html">الألعاب</a></li>
       <li><a href="/ar/websites.html">المواقع</a></li>
       <li><a href="/ar/about.html">من نحن</a></li>
-      <li><a class="cta" href="/ar/about.html#contact">اتصل بنا</a></li>
+      <li><a class="cta" href="/ar/contact.html">اتصل بنا</a></li>
     </ul>
   </div>
 </header>
 
 <main>
 <div class="phero">
-  <span class="blob b1"></span><span class="blob b2"></span>
   <div class="wrap">
-    <img class="app" src="/assets/logo.svg" alt="شعار Acute By" width="88" height="88">
     <div>
+      <span class="eyebrow">ألعابنا</span>
       <h1>ألعابنا <span class="grad">للهاتف</span></h1>
       <div class="meta">ألعاب مريحة وخفيفة تعمل دون إنترنت على Android وiOS</div>
     </div>
   </div>
 </div>
 
-<section id="games-list" aria-label="مجموعة ألعابنا">
+<section class="sec tight" id="games-list" aria-label="مجموعة ألعابنا">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">ألعابنا</span>
-      <h2>ألعاب مريحة <span class="grad">ستعود إليها دائمًا</span></h2>
-      <p>سهلة التعلّم وممتعة الإتقان، ومثالية لاستراحة خمس دقائق أو أمسية طويلة هادئة.</p>
+    <div class="panel-list">
+        <article class="panel jar reveal" id="jarlings">
+          <div class="copy">
+            <div class="pid"><img src="/assets/games/jarlings-icon.webp" alt="أيقونة تطبيق Jarlings" width="56" height="56"><span class="genre">لغز فرز · 100 مستوى · 10 عوالم</span></div>
+            <h2 id="jar-title">Jarlings: Sort Puzzle</h2>
+            <p class="desc">افرز كائنات Jarlings الهلامية الطرية في البرطمانات واستمع إلى غناء كل برطمان ممتلئ. كل مستوى أصعب قليلًا من سابقه، وفي كل مستوى عاشر ينتظرك صندوق كنز.</p>
+            <ul class="chips"><li>كل مستوى أصعب</li><li>مناسبة لعمى الألوان</li><li>كائنات Jarlings غامضة</li><li>هدايا يومية</li></ul>
+            <div class="foot"><span class="status"><i></i>قريبًا على Android وiOS</span><a href="/ar/jarlings/">كل التفاصيل &larr;</a><a href="/ar/privacy.html#jarlings">سياسة الخصوصية &larr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/jarlings-2.webp" alt="خريطة Jarlings بعشرة عوالم ذات طابع مميز" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/jarlings-3.webp" alt="صندوق كنز في Jarlings كل عشرة مستويات" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/jarlings-1.webp" alt="مشهد من Jarlings: فرز الكائنات الهلامية في البرطمانات" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel mah flip reveal" id="mahjong-sunroom">
+          <div class="copy">
+            <div class="pid"><img src="/assets/games/mahjong-icon.webp" alt="أيقونة تطبيق Mahjong Sunroom" width="56" height="56"><span class="genre">ماهجونغ سوليتير · 100 لوحة · 10 حدائق</span></div>
+            <h2 id="mah-title">Mahjong Sunroom: Big Tiles</h2>
+            <p class="desc">ماهجونغ سوليتير مريح بقطع كبيرة سهلة القراءة وأرقام في الزوايا. امشِ في ممر حديقة من 100 لوحة، واجمع النجوم، وازرع نبتة جديدة في غرفتك المشمسة مع كل فوز.</p>
+            <ul class="chips"><li>قطع كبيرة جدًا</li><li>كل لوحة قابلة للحل</li><li>تلميحات لطيفة</li><li>نمِّ غرفتك المشمسة</li></ul>
+            <div class="foot"><span class="status"><i></i>قريبًا على Android وiOS</span><a href="/ar/mahjong-sunroom/">كل التفاصيل &larr;</a><a href="/ar/privacy.html#mahjong-sunroom">سياسة الخصوصية &larr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/mahjong-2.webp" alt="ممر الحديقة في Mahjong Sunroom بعشر حدائق" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/mahjong-3.webp" alt="لوحة مكتملة في Mahjong Sunroom بثلاث نجوم" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/mahjong-1.webp" alt="لوحة Mahjong Sunroom بقطع كبيرة وواضحة" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel pp reveal" id="paint-parade">
+          <div class="copy">
+            <div class="pid"><img src="/assets/games/paint-icon.webp" alt="أيقونة تطبيق Paint Parade" width="56" height="56"><span class="genre">لغز فن البكسل · 100 صورة · 10 مراسم</span></div>
+            <h2 id="pp-title">Paint Parade: Pixel Puzzle</h2>
+            <p class="desc">أرسل رسامي علب الطلاء المرحين على الحزام وشاهد صورة بكسل تظهر رشة بعد رشة. وكل صورة مكتملة تُؤطَّر في معرضك.</p>
+            <ul class="chips"><li>ارسم لتكشف الصورة</li><li>كل مستوى قابل للحل</li><li>معرض لجمع الصور</li><li>رموز لمن لديهم عمى ألوان</li></ul>
+            <div class="foot"><span class="status"><i></i>قريبًا على Android وiOS</span><a href="/ar/paint-parade/">كل التفاصيل &larr;</a><a href="/ar/privacy.html#paint-parade">سياسة الخصوصية &larr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/paint-2.webp" alt="مسار الموكب في Paint Parade عبر عشرة مراسم" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/paint-3.webp" alt="تحفة فنية في Paint Parade بثلاث نجوم" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/paint-1.webp" alt="مشهد من Paint Parade: الرسامون يرشون سمكة بكسل" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel ots flip reveal" id="one-touch-survivor">
+          <div class="copy">
+            <div class="pid"><img src="/assets/games/survivor-icon.webp" alt="أيقونة تطبيق One Touch Survivor" width="56" height="56"><span class="genre">قتال الساحة · 10 موجات · زعيمان · وضع بلا نهاية</span></div>
+            <h2 id="ots-title">One Touch Survivor</h2>
+            <p class="desc">اصمد بإصبع واحدة. أدر درعك المتوهج لصد كل ما يأتي نحوك، ونفّذ صدًا مثاليًا لتعيده مباشرة، واختر قوة جديدة بعد كل موجة.</p>
+            <ul class="chips"><li>تحكم بإصبع واحدة</li><li>ثلاثة أبطال</li><li>بناء جديد في كل جولة</li><li>جولة يومية</li></ul>
+            <div class="foot"><span class="status"><i></i>قريبًا على Android وiOS</span><a href="/ar/one-touch-survivor/">كل التفاصيل &larr;</a><a href="/ar/privacy.html#one-touch-survivor">سياسة الخصوصية &larr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/survivor-1.webp" alt="الشاشة الرئيسية في One Touch Survivor مع ثلاثة أبطال للاختيار" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/survivor-3.webp" alt="اختيار ترقية في One Touch Survivor بعد إنهاء موجة" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/survivor-2.webp" alt="مشهد من One Touch Survivor: صد مثالي أمام الزعيم Warden Prime" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
+        <article class="panel cd reveal" id="chrono-detective">
+          <div class="copy">
+            <div class="pid"><img src="/assets/games/chrono-icon.webp" alt="أيقونة تطبيق Chrono Detective" width="56" height="56"><span class="genre">ألغاز الزمن · 30 قضية · مشهد جديد في كل مرة</span></div>
+            <h2 id="cd-title">Chrono Detective</h2>
+            <p class="desc">وقعت الجريمة بالفعل. أعد الصباح إلى الوراء، وغيّر شيئًا صغيرًا (أغلق بابًا، أو شغّل رنين هاتف، أو أطفئ الأنوار)، وأعد المشهد حتى يُقبض على اللص متلبسًا.</p>
+            <ul class="chips"><li>ترجيع وإعادة</li><li>بنوك ومتاحف ومحال مجوهرات وكازينوهات</li><li>تلميحات عندما تتعثر</li><li>العب دون إنترنت</li></ul>
+            <div class="foot"><span class="status"><i></i>قريبًا على Android وiOS</span><a href="/ar/chrono-detective/">كل التفاصيل &larr;</a><a href="/ar/privacy.html#chrono-detective">سياسة الخصوصية &larr;</a></div>
+          </div>
+          <div class="shots">
+            <div class="phone p2"><img src="/assets/games/chrono-1.webp" alt="لوحة القضايا في Chrono Detective مع قضايا تدريبية مثبتة على لوح فلين" width="360" height="730" loading="lazy"></div>
+            <div class="phone p3"><img src="/assets/games/chrono-3.webp" alt="قضية مغلقة بثلاث نجوم في Chrono Detective" width="360" height="730" loading="lazy"></div>
+            <div class="phone p1"><img src="/assets/games/chrono-2.webp" alt="التحقيق في سرقة متحف على الخط الزمني في Chrono Detective" width="360" height="730" loading="lazy"></div>
+          </div>
+        </article>
     </div>
-
-    <article class="game jar reveal" id="jarlings" aria-labelledby="jar-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/jarlings-icon.webp" alt="أيقونة تطبيق Jarlings" width="84" height="84">
-          <div><h3 id="jar-title">Jarlings: Sort Puzzle</h3><div class="genre">لغز فرز · 100 مستوى · 10 عوالم</div></div>
-        </div>
-        <p class="desc">افرز كائنات Jarlings الهلامية الطرية في البرطمانات واستمع إلى غناء كل برطمان ممتلئ. كل مستوى أصعب قليلًا من سابقه، وفي كل مستوى عاشر ينتظرك صندوق كنز.</p>
-        <ul class="feats">
-          <li>كل مستوى أصعب</li><li>مناسبة لعمى الألوان</li><li>كائنات Jarlings غامضة</li><li>هدايا يومية</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>قريبًا على Android وiOS</span>
-          <a class="link" href="/ar/jarlings/">كل التفاصيل &larr;</a>
-          <a class="link" href="/ar/privacy.html#jarlings">سياسة الخصوصية &larr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/jarlings-2.webp" alt="خريطة Jarlings بعشرة عوالم ذات طابع مميز" width="360" height="730" loading="lazy">
-        <img src="/assets/games/jarlings-1.webp" alt="مشهد من Jarlings: فرز الكائنات الهلامية في البرطمانات" width="360" height="730" loading="lazy">
-        <img src="/assets/games/jarlings-3.webp" alt="صندوق كنز في Jarlings كل عشرة مستويات" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <article class="game mah reveal" id="mahjong-sunroom" aria-labelledby="mah-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/mahjong-icon.webp" alt="أيقونة تطبيق Mahjong Sunroom" width="84" height="84">
-          <div><h3 id="mah-title">Mahjong Sunroom: Big Tiles</h3><div class="genre">ماهجونغ سوليتير · 100 لوحة · 10 حدائق</div></div>
-        </div>
-        <p class="desc">ماهجونغ سوليتير مريح بقطع كبيرة سهلة القراءة وأرقام في الزوايا. امشِ في ممر حديقة من 100 لوحة، واجمع النجوم، وازرع نبتة جديدة في غرفتك المشمسة مع كل فوز.</p>
-        <ul class="feats">
-          <li>قطع كبيرة جدًا</li><li>كل لوحة قابلة للحل</li><li>تلميحات لطيفة</li><li>نمِّ غرفتك المشمسة</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>قريبًا على Android وiOS</span>
-          <a class="link" href="/ar/mahjong-sunroom/">كل التفاصيل &larr;</a>
-          <a class="link" href="/ar/privacy.html#mahjong-sunroom">سياسة الخصوصية &larr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/mahjong-2.webp" alt="ممر الحديقة في Mahjong Sunroom بعشر حدائق" width="360" height="730" loading="lazy">
-        <img src="/assets/games/mahjong-1.webp" alt="لوحة Mahjong Sunroom بقطع كبيرة وواضحة" width="360" height="730" loading="lazy">
-        <img src="/assets/games/mahjong-3.webp" alt="لوحة مكتملة في Mahjong Sunroom بثلاث نجوم" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <article class="game pp reveal" id="paint-parade" aria-labelledby="pp-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/paint-icon.webp" alt="أيقونة تطبيق Paint Parade" width="84" height="84">
-          <div><h3 id="pp-title">Paint Parade: Pixel Puzzle</h3><div class="genre">لغز فن البكسل · 100 صورة · 10 مراسم</div></div>
-        </div>
-        <p class="desc">أرسل رسامي علب الطلاء المرحين على الحزام وشاهد صورة بكسل تظهر رشة بعد رشة. وكل صورة مكتملة تُؤطَّر في معرضك.</p>
-        <ul class="feats">
-          <li>ارسم لتكشف الصورة</li><li>كل مستوى قابل للحل</li><li>معرض لجمع الصور</li><li>رموز لمن لديهم عمى ألوان</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>قريبًا على Android وiOS</span>
-          <a class="link" href="/ar/paint-parade/">كل التفاصيل &larr;</a>
-          <a class="link" href="/ar/privacy.html#paint-parade">سياسة الخصوصية &larr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/paint-2.webp" alt="مسار الموكب في Paint Parade عبر عشرة مراسم" width="360" height="730" loading="lazy">
-        <img src="/assets/games/paint-1.webp" alt="مشهد من Paint Parade: الرسامون يرشون سمكة بكسل" width="360" height="730" loading="lazy">
-        <img src="/assets/games/paint-3.webp" alt="تحفة فنية في Paint Parade بثلاث نجوم" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <article class="game ots reveal" id="one-touch-survivor" aria-labelledby="ots-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/survivor-icon.webp" alt="أيقونة تطبيق One Touch Survivor" width="84" height="84">
-          <div><h3 id="ots-title">One Touch Survivor</h3><div class="genre">قتال الساحة · 10 موجات · زعيمان · وضع بلا نهاية</div></div>
-        </div>
-        <p class="desc">اصمد بإصبع واحدة. أدر درعك المتوهج لصد كل ما يأتي نحوك، ونفّذ صدًا مثاليًا لتعيده مباشرة، واختر قوة جديدة بعد كل موجة.</p>
-        <ul class="feats">
-          <li>تحكم بإصبع واحدة</li><li>ثلاثة أبطال</li><li>بناء جديد في كل جولة</li><li>جولة يومية</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>قريبًا على Android وiOS</span>
-          <a class="link" href="/ar/one-touch-survivor/">كل التفاصيل &larr;</a>
-          <a class="link" href="/ar/privacy.html#one-touch-survivor">سياسة الخصوصية &larr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/survivor-1.webp" alt="الشاشة الرئيسية في One Touch Survivor مع ثلاثة أبطال للاختيار" width="360" height="730" loading="lazy">
-        <img src="/assets/games/survivor-2.webp" alt="مشهد من One Touch Survivor: صد مثالي أمام الزعيم Warden Prime" width="360" height="730" loading="lazy">
-        <img src="/assets/games/survivor-3.webp" alt="اختيار ترقية في One Touch Survivor بعد إنهاء موجة" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
-    <article class="game cd reveal" id="chrono-detective" aria-labelledby="cd-title">
-      <div class="info">
-        <div class="top">
-          <img class="icon" src="/assets/games/chrono-icon.webp" alt="أيقونة تطبيق Chrono Detective" width="84" height="84">
-          <div><h3 id="cd-title">Chrono Detective</h3><div class="genre">ألغاز الزمن · 30 قضية · مشهد جديد في كل مرة</div></div>
-        </div>
-        <p class="desc">وقعت الجريمة بالفعل. أعد الصباح إلى الوراء، وغيّر شيئًا صغيرًا (أغلق بابًا، أو شغّل رنين هاتف، أو أطفئ الأنوار)، وأعد المشهد حتى يُقبض على اللص متلبسًا.</p>
-        <ul class="feats">
-          <li>ترجيع وإعادة</li><li>بنوك ومتاحف ومحال مجوهرات وكازينوهات</li><li>تلميحات عندما تتعثر</li><li>العب دون إنترنت</li>
-        </ul>
-        <div class="row">
-          <span class="status"><span class="dot"></span>قريبًا على Android وiOS</span>
-          <a class="link" href="/ar/chrono-detective/">كل التفاصيل &larr;</a>
-          <a class="link" href="/ar/privacy.html#chrono-detective">سياسة الخصوصية &larr;</a>
-        </div>
-      </div>
-      <div class="shots">
-        <img src="/assets/games/chrono-1.webp" alt="لوحة القضايا في Chrono Detective مع قضايا تدريبية مثبتة على لوح فلين" width="360" height="730" loading="lazy">
-        <img src="/assets/games/chrono-2.webp" alt="التحقيق في سرقة متحف على الخط الزمني في Chrono Detective" width="360" height="730" loading="lazy">
-        <img src="/assets/games/chrono-3.webp" alt="قضية مغلقة بثلاث نجوم في Chrono Detective" width="360" height="730" loading="lazy">
-      </div>
-    </article>
-
     <div class="soon reveal">
       <div class="bubbles" aria-hidden="true"><span>&#x2726;</span><span>?</span><span>+</span></div>
       <div>
         <h3>المزيد من الألعاب والتطبيقات قيد الإعداد</h3>
         <p>الأفكار الجديدة لا تتوقف. هل تريد أن تعرفها أولًا؟</p>
       </div>
-      <a class="btn btn-primary" href="/ar/about.html#contact">أبقني على اطلاع</a>
+      <a class="btn btn-primary" href="/ar/contact.html">أبقني على اطلاع</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="promise" aria-labelledby="promise-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">وعدنا</span>
+        <h2 id="promise-title">صغيرة على هاتفك. <span class="grad">كبيرة في العناية.</span></h2>
+      </div>
+      <p>كل لعبة نصنعها تتبع القواعد الأربع نفسها.</p>
+    </div>
+    <div class="pgrid">
+      <div class="pitem reveal"><span class="num">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>خفيفة كالريشة</h3>
+        <p>تنزيلات صغيرة وبدء سريع ولعب سلس، حتى على الهواتف القديمة.</p>
+      </div>
+      <div class="pitem reveal"><span class="num">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>الخصوصية هي الأساس</h3>
+        <p>دون حسابات ودون تسجيل. يبقى تقدمك على جهازك.</p>
+      </div>
+      <div class="pitem reveal"><span class="num">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M3 7h18M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></svg></div>
+        <h3>عادلة وودودة</h3>
+        <p>لا مؤقتات طاقة ولا دفع للفوز. وحيثما وُجدت إعلانات في نسخة ما، تبقى مقاطع الفيديو باختيارك دائمًا.</p>
+      </div>
+      <div class="pitem reveal"><span class="num">04</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg></div>
+        <h3>مصنوعة للجميع</h3>
+        <p>صور كبيرة وواضحة، وإشارات مناسبة لعمى الألوان، وإيقاع هادئ.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -251,16 +235,47 @@
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="/ar/" aria-label="الصفحة الرئيسية لـ Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34"><b>Acute <span>By</span></b></a>
-    <nav aria-label="تذييل الصفحة">
-      <a href="/ar/games.html">الألعاب</a>
-      <a href="/ar/websites.html">المواقع</a>
-      <a href="/ar/about.html">من نحن</a>
-      <a href="/ar/privacy.html">سياسات الخصوصية</a>
-      <a href="/ar/terms.html">شروط الاستخدام</a>
-      <a href="/ar/about.html#contact">اتصل بنا</a>
-    </nav>
-    <small>&copy; <span id="year">2026</span> Acute By. صُنع بعناية.</small>
+    <div class="foot-top">
+      <div class="foot-about">
+        <a class="brand" href="/ar/" aria-label="الصفحة الرئيسية لـ Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
+        <p>استوديو مستقل يصنع ألعاب هاتف مريحة ومواقع مجانية للمهام اليومية.</p>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">الألعاب</p>
+        <ul>
+          <li><a href="/ar/jarlings/">Jarlings</a></li>
+          <li><a href="/ar/mahjong-sunroom/">Mahjong Sunroom</a></li>
+          <li><a href="/ar/paint-parade/">Paint Parade</a></li>
+          <li><a href="/ar/one-touch-survivor/">One Touch Survivor</a></li>
+          <li><a href="/ar/chrono-detective/">Chrono Detective</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">المواقع</p>
+        <ul>
+          <li><a href="https://www.fileicu.com/ar/" target="_blank" rel="noopener">File ICU</a></li>
+          <li><a href="https://www.health-icu.com/ar/" target="_blank" rel="noopener">Health ICU</a></li>
+          <li><a href="/ar/file-icu-app/">تطبيق File ICU</a></li>
+          <li><a href="/ar/health-icu-app/">تطبيق Health ICU</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">الاستوديو</p>
+        <ul>
+          <li><a href="/ar/about.html">من نحن</a></li>
+          <li><a href="/ar/games.html">الألعاب</a></li>
+          <li><a href="/ar/websites.html">المواقع</a></li>
+          <li><a href="/ar/contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <small>&copy; <span id="year">2026</span> Acute By. صُنع بعناية.</small>
+      <nav aria-label="تذييل الصفحة">
+        <a href="/ar/privacy.html">سياسات الخصوصية</a>
+        <a href="/ar/terms.html">شروط الاستخدام</a>
+      </nav>
+    </div>
   </div>
 </footer>
 </body>

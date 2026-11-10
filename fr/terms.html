@@ -18,7 +18,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#170C2B">
+<meta name="theme-color" content="#FFF1E6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Acute By">
 <meta property="og:title" content="Conditions d'utilisation des jeux Acute By">
@@ -31,8 +31,9 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Noto+Sans+Arabic:wght@400;600;800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
+<script>(function(d){d.className+=' js';try{var t=localStorage.getItem('acute_theme');if(t)d.setAttribute('data-theme',t)}catch(e){}})(document.documentElement)</script>
 <script src="/assets/site.js" defer></script>
 <script src="/assets/consent.js" defer></script>
 </head>
@@ -41,19 +42,18 @@
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="/fr/" aria-label="Accueil Acute By"><img src="/assets/logo.svg" alt="" width="38" height="38"><b>Acute <span>By</span></b></a>
+    <a class="brand" href="/fr/" aria-label="Accueil Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
     <ul>
       <li><a href="/fr/games.html">Jeux</a></li>
       <li><a href="/fr/websites.html">Sites web</a></li>
       <li><a href="/fr/about.html">À propos</a></li>
-      <li><a class="cta" href="/fr/about.html#contact">Contact</a></li>
+      <li><a class="cta" href="/fr/contact.html">Contact</a></li>
     </ul>
   </div>
 </header>
 
 <main>
 <div class="phero">
-  <span class="blob b1"></span><span class="blob b2"></span>
   <div class="wrap">
     <img class="app" src="/assets/logo.svg" alt="Logo Acute By" width="88" height="88">
     <div>
@@ -115,16 +115,47 @@
 
 <footer>
   <div class="wrap">
-    <a class="brand" href="/fr/" aria-label="Accueil Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34"><b>Acute <span>By</span></b></a>
-    <nav aria-label="Pied de page">
-      <a href="/fr/games.html">Jeux</a>
-      <a href="/fr/websites.html">Sites web</a>
-      <a href="/fr/about.html">À propos</a>
-      <a href="/fr/privacy.html">Politiques de confidentialité</a>
-      <a href="/fr/terms.html">Conditions d'utilisation</a>
-      <a href="/fr/about.html#contact">Contact</a>
-    </nav>
-    <small>&copy; <span id="year">2026</span> Acute By. Fait avec soin.</small>
+    <div class="foot-top">
+      <div class="foot-about">
+        <a class="brand" href="/fr/" aria-label="Accueil Acute By"><img src="/assets/logo.svg" alt="" width="34" height="34">Acute By</a>
+        <p>Un studio indépendant qui crée des jeux mobiles cosy et des sites web gratuits pour le quotidien.</p>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Jeux</p>
+        <ul>
+          <li><a href="/fr/jarlings/">Jarlings</a></li>
+          <li><a href="/fr/mahjong-sunroom/">Mahjong Sunroom</a></li>
+          <li><a href="/fr/paint-parade/">Paint Parade</a></li>
+          <li><a href="/fr/one-touch-survivor/">One Touch Survivor</a></li>
+          <li><a href="/fr/chrono-detective/">Chrono Detective</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Sites web</p>
+        <ul>
+          <li><a href="https://www.fileicu.com/fr/" target="_blank" rel="noopener">File ICU</a></li>
+          <li><a href="https://www.health-icu.com/fr/" target="_blank" rel="noopener">Health ICU</a></li>
+          <li><a href="/fr/file-icu-app/">Application File ICU</a></li>
+          <li><a href="/fr/health-icu-app/">Application Health ICU</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <p class="foot-h">Studio</p>
+        <ul>
+          <li><a href="/fr/about.html">À propos</a></li>
+          <li><a href="/fr/games.html">Jeux</a></li>
+          <li><a href="/fr/websites.html">Sites web</a></li>
+          <li><a href="/fr/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <small>&copy; <span id="year">2026</span> Acute By. Fait avec soin.</small>
+      <nav aria-label="Pied de page">
+        <a href="/fr/privacy.html">Politiques de confidentialité</a>
+        <a href="/fr/terms.html">Conditions d'utilisation</a>
+      </nav>
+    </div>
   </div>
 </footer>
 </body>
