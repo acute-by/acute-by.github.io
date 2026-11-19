@@ -30,18 +30,17 @@ as File ICU and Health ICU, using the device's time zone because GitHub Pages ha
 
 ## URLs for the store consoles
 
-| What | HUAWEI AppGallery Connect | Google Play Console / AdMob |
-|---|---|---|
-| Website / developer site | `https://acute-by.github.io/` | `https://acute-by.github.io/` |
-| Jarlings privacy policy | `https://acute-by.github.io/jarlings/privacy-huawei.html` | `https://acute-by.github.io/jarlings/privacy.html` |
-| Mahjong Sunroom privacy policy | `https://acute-by.github.io/mahjong-sunroom/privacy-huawei.html` | `https://acute-by.github.io/mahjong-sunroom/privacy.html` |
-| Paint Parade privacy policy | `https://acute-by.github.io/paint-parade/privacy-huawei.html` | `https://acute-by.github.io/paint-parade/privacy.html` |
-| Terms of use (all games) | `https://acute-by.github.io/terms.html` | `https://acute-by.github.io/terms.html` |
-| All privacy policies | `https://acute-by.github.io/privacy.html` | same |
-| app-ads.txt | not used (AppGallery builds have no ads) | `https://acute-by.github.io/app-ads.txt` |
+| What | Google Play Console / AdMob |
+|---|---|
+| Website / developer site | `https://acute-by.github.io/` |
+| Jarlings privacy policy | `https://acute-by.github.io/jarlings/privacy.html` |
+| Mahjong Sunroom privacy policy | `https://acute-by.github.io/mahjong-sunroom/privacy.html` |
+| Paint Parade privacy policy | `https://acute-by.github.io/paint-parade/privacy.html` |
+| Terms of use (all games) | `https://acute-by.github.io/terms.html` |
+| All privacy policies | `https://acute-by.github.io/privacy.html` |
+| app-ads.txt | `https://acute-by.github.io/app-ads.txt` |
 
-Games and apps ship on Android and iOS only. The three `privacy-huawei.html` pages stay online for any build that links to
-them, but they are `noindex`, out of the sitemap and not linked from the site. iOS privacy policies do not exist yet and
+Games and apps ship on Android (Google Play). iOS privacy policies do not exist yet and
 are needed before App Store submission.
 
 The in-game share text links to `https://acute-by.github.io/#jarlings`, `#mahjong-sunroom` and `#paint-parade`.
